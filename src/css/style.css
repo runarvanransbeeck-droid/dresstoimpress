@@ -1,9 +1,22 @@
+@font-face {
+    font-family: 'RF Dewi';
+    src: local('RF Dewi Black'), local('RF-Dewi-Black'),
+        url('./assets/fonts/RFDewi-Black.woff2') format('woff2'),
+        url('./assets/fonts/RFDewi-Black.woff') format('woff'),
+        url('./assets/fonts/RFDewi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 h1{
-    font-family: 'RF Dewi Extended';
+    font-family: 'RF Dewi', sans-serif;
+    font-weight: 900;
 }
 
 h2{
-    font-family: 'Ibarra Real Nova';
+    font-family: 'Ibarra Real Nova' ;
+    font-style: italic;
+    font-weight: 400;
 }
 
 p{
