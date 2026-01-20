@@ -20,6 +20,7 @@ h1 {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 2rem;
+    justify-self: center;
 }
 
 h2 {
@@ -45,10 +46,12 @@ article{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 140px;
+    
 }
 
 .titleflowercontainer{
     width: fit-content;
+    justify-self: center;
 }
 
 
@@ -234,10 +237,15 @@ header{
 
 /* --- Walters themes --- */
 
+.waltersthemescontainer .titleflowercontainer{
+    justify-self: start;
+}
+
 .stretchcanvascontainer{
     padding-top: 25px;
     width: 234.553px;
     justify-self: center;
+    margin-bottom: 25rem;
 }
 
 .stretchcanvas{
@@ -263,6 +271,9 @@ header{
     width: 163.137px;
     height: 179.402px;
     padding-bottom: 5rem;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 .stretchcanvas-dragger{
@@ -274,8 +285,85 @@ header{
 }
 
 .stretchpath{
-    position: relative;
+    position: absolute;
     z-index: -1;
     display: block;
+    justify-self: center;
+}
+
+/* --- Break-up section --- */
+.breakupcontainer-swoop{
+    display: block;
+    width: 263.994px;
+    height: 40.351px;
+    justify-self: center;
+}
+
+.breakupimgcontainer{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.breakupimgcontainer img{
+    width: 100px;
+    height: 139px;
+}
+
+.breakup-decision{
+    padding-top: 30px;
+    justify-self: center;
+    width: 300px;
+}
+
+.zipperplaceholder{
+    position: relative;
+    top: -30rem;
+    display: block;
+    width: 100vw;
+}
+
+.startingfrom0container{
+    margin-top: -25rem;
+    margin-bottom: 10rem;
+    justify-self: center;
+}
+
+.startingfrom0title{
+   padding-bottom: 20px;
+}
+
+.startingfrom0title-0{
+    font-size: 4rem;
+}
+
+.startingfrom0-outro{
+    padding-top: 50px;
+}
+
+.startingfrom0-outro p{
+    padding-bottom: 1rem;
+}
+
+.startingfrom0-outro p + p{
+    font-weight: 800;
+}
+
+/* --- Speak his words section --- */
+
+.speakhiswordscontainer{
+
+}
+
+.recordbutton{
+    position: relative;
+    top: 5rem;
+    display: block;
+    width: 72px;
+    height: 82px;
     justify-self: center;
 }
