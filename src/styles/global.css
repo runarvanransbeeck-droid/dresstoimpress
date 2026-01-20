@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'RF Dewi';
+    src: local('RF Dewi Black'), local('RF-Dewi-Black'),
+        url('./assets/fonts/RFDewi-Black.woff2') format('woff2'),
+        url('./assets/fonts/RFDewi-Black.woff') format('woff'),
+        url('./assets/fonts/RFDewi-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'RF Dewi', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Ibarra Real Nova';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: 'Avenir';
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    background-color: #B3FFE5;
+}
+
+main {
+    width: 100vw;
+    padding-top: 10rem;
+}
+
+/* nav */
+nav {
+    position: relative;
+    width: 100vw;
+}
+
+.navtop {
+    margin-top: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.navbg {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: block;
+    z-index: 0;
+}
+
+.momulogo {
+    width: 86px;
+    height: auto;
+}
+
+.hamburgermenu {
+    width: 40px;
+    height: 30.666px;
+}
