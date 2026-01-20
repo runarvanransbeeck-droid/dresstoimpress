@@ -1,15 +1,19 @@
 @font-face {
-    font-family: 'RF Dewi';
-    src: local('RF Dewi Black'), local('RF-Dewi-Black'),
-        url('./assets/fonts/RFDewi-Black.woff2') format('woff2'),
-        url('./assets/fonts/RFDewi-Black.woff') format('woff'),
-        url('./assets/fonts/RFDewi-Black.ttf') format('truetype');
+    font-family: 'Archivo Black';
+    src: local('Archivo Black'), local('Archivo-Black'),
+        url('./assets/fonts/ArchivoBlack.woff2') format('woff2'),
+        url('./assets/fonts/ArchivoBlack.woff') format('woff'),
+        url('./assets/fonts/ArchivoBlack.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
+*{
+    color: #393939;
+}
+
 h1 {
-    font-family: 'RF Dewi', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 2rem;
 }
@@ -33,17 +37,14 @@ body {
 
 main {
     width: 100vw;
-    padding-top: 10rem;
+    margin-top: -22rem;
 }
 
 /* nav */
-nav {
-    position: relative;
-    width: 100vw;
-}
+
 
 .navtop {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -57,15 +58,85 @@ nav {
     width: 100vw;
     height: auto;
     display: block;
-    z-index: 0;
+    z-index: -1;
 }
 
 .momulogo {
+    padding-left: 1rem;
     width: 86px;
     height: auto;
 }
 
-.hamburgermenu {
+.hamburgermenubutton {
+    padding-right: 2rem;
     width: 40px;
     height: 30.666px;
+}
+
+
+.hamburgermenu{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding-top: 2rem;
+    margin-top: -1em;
+    justify-self: right;
+    background: rgba(255, 166, 122, 0.70);
+    width: 182px;
+    height: 420px;
+    border-radius: 0 0 0 20px;
+    z-index: 2;
+}
+
+.hamburgermenu li{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+/* Walter name header */
+
+.Waltername{
+    position: relative;
+    z-index: -1;
+    height: 197px;
+}
+
+.Waltername-Walter{
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    color: #FF5887;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;   
+}
+
+.Waltername-Van{
+    position: absolute;
+    top: 2rem;
+    left: 7rem;
+    color: #FF5887;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.Waltername-Beirendonck{
+    position: absolute;
+    top: 5rem;
+    color: #FF5887;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
