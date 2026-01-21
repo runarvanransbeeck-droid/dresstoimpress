@@ -35,11 +35,13 @@ h2 {
 p {
     font-family: 'Avenir';
     font-size: 1rem;
+    line-height: 150%;
 }
 
 main {
     width: 100vw;
     margin-top: -22rem;
+    overflow-x: hidden;
 }
 
 article{
@@ -316,6 +318,7 @@ header{
 
 .breakup-decision{
     padding-top: 30px;
+    text-align: center;
     justify-self: center;
     width: 300px;
 }
@@ -355,15 +358,193 @@ header{
 
 /* --- Speak his words section --- */
 
-.speakhiswordscontainer{
 
-}
 
 .recordbutton{
     position: relative;
-    top: 5rem;
+    top: 6rem;
     display: block;
     width: 72px;
     height: 82px;
     justify-self: center;
+}
+
+.words{
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.words p{
+    position: absolute;
+    width: 150px;
+    text-align: center;
+}
+
+.fashion{
+    top: 7rem;
+    left: 13rem;
+}
+
+.norules{
+    top: -3rem;
+    left: 7rem;
+}
+
+.truth{
+    left: 14rem;
+}
+
+.stopthinking{
+    top: 7rem;
+    right: 13rem;
+}
+
+/* --- New style --- */
+.newstyle-bg{
+    position: absolute;
+    top: -4rem;
+    left: -45rem;
+   
+    z-index: -3;
+}
+.newstylecontainer .titleflowercontainer{
+    justify-self: start;
+}
+
+.newstylecontainer{
+    position: relative;
+}
+
+.stretchsilhouette{
+    width: 269.088px;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.stretchhat{
+    width: 81.876px;
+    transform-origin: center;
+}
+
+.stretchdress{
+    width: 138.833px;
+    transform-origin: center;
+}
+
+.sizer{
+    width: 55.539px;
+    cursor: nwse-resize;
+}
+
+.sizedhat{
+    position: absolute;
+    top: 1rem;
+    left: 3.5rem;
+}
+
+.sizedress{
+    position: absolute;
+    top: 2rem;
+    left: -1.5rem;
+}
+
+.stretchdress,.stretchhat{
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+
+.hatcontainer{
+    position: relative;
+    top: -20.5rem;
+    left: 6rem;
+    width: 111.449px;
+    transform-origin: center;
+}
+
+.dresscontainer{
+    position: relative;
+    top: -18rem;
+    left: 4rem;
+    width: 166.501px;
+    transform-origin: center;
+}
+
+.stretchcontainer{
+    position: relative;
+    padding-top: 5rem;
+    justify-self: center;
+}
+
+/* --- The Goal --- */
+.thegoalcontainer p{
+    padding-bottom: 50px;
+}
+
+/* --- Caroussel --- */
+.carousselcontainer{
+    position: relative;
+}
+.carousselimgcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousselimg{
+    position: relative;
+    width: 160px;
+    padding-left: 7rem;
+    padding-right: 5rem;
+}
+
+.carousselimg p{
+    position: absolute;
+    text-align: center;
+    width: 126px;
+    top: 10.8rem;
+    left: 8.5rem;
+    color: white;
+}
+
+.carousselcontainer-bg{
+    position: absolute;
+    top: -1rem;
+    display: block;
+    width: 918px;
+    justify-self: center;
+}
+
+.caroussel-prevbutton{
+    position: absolute;
+    top: 4rem;
+}
+
+.caroussel-nextbutton{
+    position: absolute;
+    right: 0;
+    top: 4rem
+}
+
+/* --- Want more? --- */
+.booktickets{
+    padding-top: 1rem;
+    font-weight: 800;
+}
+
+.MoMulink{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MoMuLogo{
+    width: 93px;
+}
+
+.booktickets-button{
+    width: 132.85px;
 }
