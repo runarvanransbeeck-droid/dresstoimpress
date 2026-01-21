@@ -1,3 +1,11 @@
+:root {
+    --nav-offset: 120px;
+    --orange: #FF9A3D;
+    --cyan: #B3FFE5;
+    --pink: #FF5887;
+    --green: #08FF55;
+}
+
 @font-face {
     font-family: 'Archivo Black';
     src: url('/src/assets/fonts/ArchivoBlack-Regular.otf') format('opentype'),
@@ -6,14 +14,17 @@
     font-style: normal;
 }
 
-*{
+* {
     color: #393939;
 }
 
-body{
-    overflow-x: hidden;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
-    background-color: #B3FFE5;
+    background-color: var(--cyan);
 }
 
 h1 {
@@ -39,19 +50,32 @@ p {
 }
 
 main {
-    width: 100vw;
-    margin-top: -22rem;
+    width: 100%;
+    margin-top: 7rem;
     overflow-x: hidden;
 }
 
-article{
+.overflow {
+    overflow-x: hidden;
+}
+
+article {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 140px;
-    
+
 }
 
-.titleflowercontainer{
+article p {
+    min-width: 90%;
+}
+
+article,
+[id] {
+    scroll-margin-top: var(--nav-offset);
+}
+
+.titleflowercontainer {
     width: fit-content;
     justify-self: center;
 }
@@ -66,7 +90,11 @@ article{
 
 /* nav */
 
-
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
 
 .navtop {
     margin-top: 1.5rem;
@@ -80,9 +108,8 @@ article{
 
 .navbg {
     position: absolute;
-    width: 100vw;
-    height: auto;
-    display: block;
+    width: 100%;
+    height: 100px;
     z-index: -1;
 }
 
@@ -99,14 +126,16 @@ article{
 }
 
 
-.hamburgermenu{
+
+
+.hamburgermenu {
     visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    padding-top: 2rem;
+    padding-top: 3rem;
     margin-top: -1em;
     justify-self: right;
     background: rgba(255, 166, 122, 0.70);
@@ -116,24 +145,31 @@ article{
     z-index: 2;
 }
 
-.hamburgermenu li{
+.hamburgermenu li {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 1rem;
     text-decoration: underline;
 }
 
-/* Walter name header */
-
-header{
-    overflow: hidden;
-    width: 100vw;
+.hamburgermenu li a:hover {
+    color: var(--cyan);
 }
 
-.header-flowerfadetop{
+/* Walter name header */
+
+header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: -2;
+    margin-bottom: 5rem;
+}
+
+.header-flowerfadetop {
     position: absolute;
-    top: 3rem;
-    left: 20.5rem;
+    top: 0;
+    left: 80%;
     z-index: -2;
     width: 83.852px;
     height: 74.824px;
@@ -141,9 +177,9 @@ header{
     aspect-ratio: 83.85/74.82;
 }
 
-.header-flowerfademiddle{
+.header-flowerfademiddle {
     position: absolute;
-    top: 10.5rem;
+    top: 5rem;
     left: 2rem;
     width: 67.645px;
     height: 60.362px;
@@ -151,22 +187,22 @@ header{
     aspect-ratio: 67.64/60.36;
 }
 
-.header-bgmobile{
+.header-bgmobile {
     position: absolute;
-    top: 0;
+    top: -30%;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     z-index: -3;
 }
 
-.Waltername{
+.Waltername {
     position: relative;
     z-index: -1;
     height: 197px;
 }
 
-.Waltername-Walter{
+.Waltername-Walter {
     position: absolute;
     bottom: 6rem;
     left: 1rem;
@@ -175,14 +211,14 @@ header{
     font-size: 70px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;   
+    line-height: normal;
 }
 
-.Waltername-Van{
+.Waltername-Van {
     position: absolute;
     top: 4rem;
     left: 7rem;
-    color: #FF5887;
+    color: var(--pink);
     font-family: 'Archivo Black', sans-serif;
     font-size: 62px;
     font-style: normal;
@@ -190,11 +226,11 @@ header{
     line-height: normal;
 }
 
-.Waltername-Beirendonck{
+.Waltername-Beirendonck {
     position: absolute;
     top: 8rem;
     left: 1rem;
-    color: #FF5887;
+    color: var(--pink);
     font-family: 'Archivo Black', sans-serif;
     font-size: 50px;
     font-style: normal;
@@ -202,7 +238,7 @@ header{
     line-height: normal;
 }
 
-.header-choicebetween{
+.header-choicebetween {
     margin-bottom: 1rem;
     justify-self: center;
     font-family: 'Ibarra Real Nova';
@@ -211,17 +247,22 @@ header{
     font-size: 1.75rem;
 }
 
-.header-commercialization{
+.header-commercialization {
     justify-self: center;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 2rem;
-    margin-bottom: 5rem;
+}
+
+.mobilerotsymbol {
+    display: block;
+    justify-self: center;
 }
 
 /* --- Initial goal --- */
 
-.initialgoal-waltervbpng,.partnershipcontainer-designpng{
+.initialgoal-waltervbpng,
+.partnershipcontainer-designpng {
     display: block;
     justify-self: center;
     width: 150px;
@@ -229,7 +270,7 @@ header{
     padding-top: 40px;
 }
 
-.mustanglogo{
+.mustanglogo {
     display: block;
     justify-self: center;
     width: 290px;
@@ -239,21 +280,22 @@ header{
 
 /* --- Walters themes --- */
 
-.waltersthemescontainer .titleflowercontainer{
+.waltersthemescontainer .titleflowercontainer {
     justify-self: start;
 }
 
-.stretchcanvascontainer{
+.stretchcanvascontainer {
     padding-top: 25px;
     width: 234.553px;
     justify-self: center;
     margin-bottom: 25rem;
 }
 
-.stretchcanvas{
+.stretchcanvas {
+    position: relative;
     display: flex;
     flex-direction: column;
-    border: 2px solid #08FF55;
+    border: 2px solid var(--green);
     padding: 20px;
     height: 210px;
     overflow: hidden;
@@ -262,14 +304,14 @@ header{
 
 
 
-.imagebackgroundshape{
+.imagebackgroundshape {
     z-index: -1;
     position: relative;
     width: 163.137px;
     height: 179.402px;
 }
 
-.stretchcanvas-img{
+.stretchcanvas-img {
     width: 163.137px;
     height: 179.402px;
     padding-bottom: 5rem;
@@ -278,7 +320,7 @@ header{
     pointer-events: none;
 }
 
-.stretchcanvas-dragger{
+.stretchcanvas-dragger {
     width: 79.255px;
     height: 17px;
     transform: rotate(90deg);
@@ -286,7 +328,7 @@ header{
     justify-self: center;
 }
 
-.stretchpath{
+.stretchpath {
     position: absolute;
     z-index: -1;
     display: block;
@@ -294,14 +336,14 @@ header{
 }
 
 /* --- Break-up section --- */
-.breakupcontainer-swoop{
+.breakupcontainer-swoop {
     display: block;
     width: 263.994px;
     height: 40.351px;
     justify-self: center;
 }
 
-.breakupimgcontainer{
+.breakupimgcontainer {
     display: flex;
     padding: 0 20px;
     justify-content: space-between;
@@ -311,48 +353,48 @@ header{
     padding-bottom: 30px;
 }
 
-.breakupimgcontainer img{
+.breakupimgcontainer img {
     width: 100px;
     height: 139px;
 }
 
-.breakup-decision{
+.breakup-decision {
     padding-top: 30px;
     text-align: center;
     justify-self: center;
     width: 300px;
 }
 
-.zipperplaceholder{
+.zipperplaceholder {
     position: relative;
     top: -30rem;
     display: block;
-    width: 100vw;
+    width: 100%;
 }
 
-.startingfrom0container{
+.startingfrom0container {
     margin-top: -25rem;
     margin-bottom: 10rem;
     justify-self: center;
 }
 
-.startingfrom0title{
-   padding-bottom: 20px;
+.startingfrom0title {
+    padding-bottom: 20px;
 }
 
-.startingfrom0title-0{
+.startingfrom0title-0 {
     font-size: 4rem;
 }
 
-.startingfrom0-outro{
+.startingfrom0-outro {
     padding-top: 50px;
 }
 
-.startingfrom0-outro p{
+.startingfrom0-outro p {
     padding-bottom: 1rem;
 }
 
-.startingfrom0-outro p + p{
+.startingfrom0-outro p+p {
     font-weight: 800;
 }
 
@@ -360,7 +402,7 @@ header{
 
 
 
-.recordbutton{
+.recordbutton {
     position: relative;
     top: 6rem;
     display: block;
@@ -369,95 +411,103 @@ header{
     justify-self: center;
 }
 
-.words{
+.words {
     position: relative;
     width: 350px;
     height: 250px;
+    justify-self: center;
 }
 
-.words p{
+.words p {
     position: absolute;
-    width: 150px;
+    min-width: 10%;
+    max-width: 50%;
     text-align: center;
 }
 
-.fashion{
+.fashion {
     top: 7rem;
     left: 13rem;
 }
 
-.norules{
+.norules {
     top: -3rem;
     left: 7rem;
 }
 
-.truth{
+.truth {
     left: 14rem;
 }
 
-.stopthinking{
+.stopthinking {
     top: 7rem;
     right: 13rem;
 }
 
+.freedom {
+    left: -1rem;
+}
+
 /* --- New style --- */
-.newstyle-bg{
+.newstyle-bg {
     position: absolute;
     top: -4rem;
     left: -45rem;
-   
+
     z-index: -3;
 }
-.newstylecontainer .titleflowercontainer{
+
+.newstylecontainer .titleflowercontainer {
     justify-self: start;
 }
 
-.newstylecontainer{
+.newstylecontainer {
     position: relative;
 }
 
-.stretchsilhouette{
+.stretchsilhouette {
     width: 269.088px;
     user-select: none;
     -webkit-user-drag: none;
     pointer-events: none;
 }
 
-.stretchhat{
+.stretchhat {
     width: 81.876px;
     transform-origin: center;
 }
 
-.stretchdress{
+.stretchdress {
     width: 138.833px;
     transform-origin: center;
 }
 
-.sizer{
+.sizer {
     width: 55.539px;
     cursor: nwse-resize;
 }
 
-.sizedhat{
+.sizedhat {
     position: absolute;
     top: 1rem;
     left: 3.5rem;
 }
 
-.sizedress{
+.sizedress {
     position: absolute;
     top: 2rem;
     left: -1.5rem;
 }
 
-.stretchdress,.stretchhat{
+.stretchdress,
+.stretchhat {
     user-select: none;
     -webkit-user-drag: none;
     pointer-events: none;
 }
 
 
-.hatcontainer{
+.hatcontainer {
     position: relative;
     top: -20.5rem;
     left: 6rem;
@@ -465,7 +515,7 @@ header{
     transform-origin: center;
 }
 
-.dresscontainer{
+.dresscontainer {
     position: relative;
     top: -18rem;
     left: 4rem;
@@ -473,43 +523,55 @@ header{
     transform-origin: center;
 }
 
-.stretchcontainer{
+.stretchcontainer {
     position: relative;
     padding-top: 5rem;
     justify-self: center;
 }
 
 /* --- The Goal --- */
-.thegoalcontainer p{
+.thegoalcontainer p {
     padding-bottom: 50px;
 }
 
 /* --- Caroussel --- */
-.carousselcontainer{
+.carousselloop {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 27%;
+    width: 160px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.carousselcontainer {
     position: relative;
 }
-.carousselimgcontainer{
+
+.carousselimgcontainer {
     display: flex;
     flex-direction: row;
 }
 
-.carousselimg{
+.carousselimg {
     position: relative;
     width: 160px;
-    padding-left: 7rem;
-    padding-right: 5rem;
+    overflow: hidden;
+    margin-right: 40px;
 }
 
-.carousselimg p{
+.carousselimg p {
     position: absolute;
     text-align: center;
     width: 126px;
     top: 10.8rem;
-    left: 8.5rem;
+    left: 10%;
     color: white;
 }
 
-.carousselcontainer-bg{
+.carousselcontainer-bg {
     position: absolute;
     top: -1rem;
     display: block;
@@ -517,34 +579,144 @@ header{
     justify-self: center;
 }
 
-.caroussel-prevbutton{
+.caroussel-prevbutton {
     position: absolute;
     top: 4rem;
 }
 
-.caroussel-nextbutton{
+.caroussel-prevbutton:hover,
+.caroussel-nextbutton:hover {
+    scale: 1.1;
+}
+
+.caroussel-nextbutton {
     position: absolute;
     right: 0;
     top: 4rem
 }
 
+
 /* --- Want more? --- */
-.booktickets{
+.bookticketscontainer {
+    padding-top: 2rem;
+    position: relative;
+}
+
+.bookticketscontainer:hover p {
+    color: var(--cyan);
+}
+
+.bookticketscontainer p {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    width: 90px;
+    min-width: 10%;
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.booktickets {
     padding-top: 1rem;
     font-weight: 800;
 }
 
-.MoMulink{
+.MoMulink {
     padding-top: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.MoMuLogo{
+.MoMuLogo {
     width: 93px;
 }
 
-.booktickets-button{
+.booktickets-button {
     width: 132.85px;
+}
+
+/* --- Footer --- */
+footer {
+    position: relative;
+}
+
+.footer_mobile {
+    position: absolute;
+    display: block;
+    justify-self: center;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+}
+
+.otherstoriescontainer {
+    padding-top: 3.5rem;
+    padding-bottom: 60px;
+}
+
+.timegrid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    justify-self: center;
+
+
+}
+
+.timegrid_1,
+.timegrid_2,
+.timegrid_3,
+.timegrid_4,
+.timegrid_5 {
+    justify-self: center;
+    font-weight: 900;
+    text-decoration: underline;
+    color: var(--cyan);
+    font-size: 22px;
+}
+
+.timegrid_1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.timegrid_2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.timegrid_3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.timegrid_4 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.timegrid_5 {
+    grid-column: span 3;
+    grid-row: 3;
+}
+
+.socialslist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    justify-self: center;
+    padding-top: 30px;
+}
+
+.footeraddress {
+    text-align: center;
+    font-weight: 800;
+    width: 80%;
+    justify-self: center;
+    padding-top: 80px;
 }
