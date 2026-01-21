@@ -50,6 +50,7 @@ p {
 }
 
 main {
+    position: relative;
     width: 100%;
     margin-top: 7rem;
     overflow-x: hidden;
@@ -206,7 +207,7 @@ header {
 
 .header__bgmobile {
     position: absolute;
-    top: 7rem;
+    top: 1.5rem;
     left: 0;
     width: 100%;
     height: 22.5rem;
@@ -294,6 +295,14 @@ header {
     width: 18.125rem;
     height: 4.75rem;
     height: auto;
+}
+
+.intropartnershipsectionbg{
+    position: absolute;
+    top: 40rem;
+    width: 100%;
+    height: 450.35px;
+    z-index: -1;
 }
 
 /* --- Walters themes --- */
@@ -391,8 +400,25 @@ header {
 .zipperplaceholder {
     position: relative;
     top: -30rem;
-    display: block;
     width: 100%;
+    height: 775px;
+}
+
+.startingfrom0titlebg{
+    position: absolute;
+    top: 250rem;
+    width: 100%;
+    height: 35px;
+    z-index: -1;
+}
+
+.startingfrom0underline{
+    position: absolute;
+    top: 273rem;
+    left: 5%;
+    width: 70%;
+    height: 15px;
+    z-index: -1;
 }
 
 .startingfrom0container {
@@ -553,6 +579,13 @@ header {
 }
 
 /* --- The Goal --- */
+.thegoalbg{
+    position: absolute;
+    top: 380rem;
+    width: 100%;
+    height: 467px;
+    z-index: -1;
+}
 .thegoalcontainer p {
     padding-bottom: 3.125rem;
 }
