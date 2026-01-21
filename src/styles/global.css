@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('/src/assets/fonts/ArchivoBlack-Regular.otf') format('opentype'),
+        url('/src/assets/fonts/ArchivoBlack-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+*{
+    color: #393939;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #B3FFE5;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+h2 {
+    font-family: 'Ibarra Real Nova';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.75rem;
+    justify-self: center;
+    padding-bottom: 15px;
+}
+
+p {
+    font-family: 'Avenir';
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+main {
+    width: 100vw;
+    margin-top: -22rem;
+    overflow-x: hidden;
+}
+
+article{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 140px;
+    
+}
+
+.titleflowercontainer{
+    width: fit-content;
+    justify-self: center;
+}
+
+
+.flowertitlepng {
+    display: block;
+    width: 57px;
+    height: 58px;
+    justify-self: center;
+}
+
+/* nav */
+
+
+
+.navtop {
+    margin-top: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.navbg {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: block;
+    z-index: -1;
+}
+
+.momulogo {
+    padding-left: 1rem;
+    width: 86px;
+    height: auto;
+}
+
+.hamburgermenubutton {
+    padding-right: 2rem;
+    width: 40px;
+    height: 30.666px;
+}
+
+
+.hamburgermenu{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding-top: 2rem;
+    margin-top: -1em;
+    justify-self: right;
+    background: rgba(255, 166, 122, 0.70);
+    width: 182px;
+    height: 420px;
+    border-radius: 0 0 0 20px;
+    z-index: 2;
+}
+
+.hamburgermenu li{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+/* Walter name header */
+
+header{
+    overflow: hidden;
+    width: 100vw;
+}
+
+.header-flowerfadetop{
+    position: absolute;
+    top: 3rem;
+    left: 20.5rem;
+    z-index: -2;
+    width: 83.852px;
+    height: 74.824px;
+    transform: rotate(-11.023deg);
+    aspect-ratio: 83.85/74.82;
+}
+
+.header-flowerfademiddle{
+    position: absolute;
+    top: 10.5rem;
+    left: 2rem;
+    width: 67.645px;
+    height: 60.362px;
+    transform: rotate(-136.085deg);
+    aspect-ratio: 67.64/60.36;
+}
+
+.header-bgmobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -3;
+}
+
+.Waltername{
+    position: relative;
+    z-index: -1;
+    height: 197px;
+}
+
+.Waltername-Walter{
+    position: absolute;
+    bottom: 6rem;
+    left: 1rem;
+    color: #FF5887;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.Waltername-Van{
+    position: absolute;
+    top: 4rem;
+    left: 7rem;
+    color: #FF5887;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Waltername-Beirendonck{
+    position: absolute;
+    top: 8rem;
+    left: 1rem;
+    color: #FF5887;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-choicebetween{
+    margin-bottom: 1rem;
+    justify-self: center;
+    font-family: 'Ibarra Real Nova';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+.header-commercialization{
+    justify-self: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* --- Initial goal --- */
+
+.initialgoal-waltervbpng,.partnershipcontainer-designpng{
+    display: block;
+    justify-self: center;
+    width: 150px;
+    height: 150px;
+    padding-top: 40px;
+}
+
+.mustanglogo{
+    display: block;
+    justify-self: center;
+    width: 290px;
+    height: 76px;
+    height: auto;
+}
+
+/* --- Walters themes --- */
+
+.waltersthemescontainer .titleflowercontainer{
+    justify-self: start;
+}
+
+.stretchcanvascontainer{
+    padding-top: 25px;
+    width: 234.553px;
+    justify-self: center;
+    margin-bottom: 25rem;
+}
+
+.stretchcanvas{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #08FF55;
+    padding: 20px;
+    height: 210px;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+
+.imagebackgroundshape{
+    z-index: -1;
+    position: relative;
+    width: 163.137px;
+    height: 179.402px;
+}
+
+.stretchcanvas-img{
+    width: 163.137px;
+    height: 179.402px;
+    padding-bottom: 5rem;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.stretchcanvas-dragger{
+    width: 79.255px;
+    height: 17px;
+    transform: rotate(90deg);
+    display: block;
+    justify-self: center;
+}
+
+.stretchpath{
+    position: absolute;
+    z-index: -1;
+    display: block;
+    justify-self: center;
+}
+
+/* --- Break-up section --- */
+.breakupcontainer-swoop{
+    display: block;
+    width: 263.994px;
+    height: 40.351px;
+    justify-self: center;
+}
+
+.breakupimgcontainer{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.breakupimgcontainer img{
+    width: 100px;
+    height: 139px;
+}
+
+.breakup-decision{
+    padding-top: 30px;
+    text-align: center;
+    justify-self: center;
+    width: 300px;
+}
+
+.zipperplaceholder{
+    position: relative;
+    top: -30rem;
+    display: block;
+    width: 100vw;
+}
+
+.startingfrom0container{
+    margin-top: -25rem;
+    margin-bottom: 10rem;
+    justify-self: center;
+}
+
+.startingfrom0title{
+   padding-bottom: 20px;
+}
+
+.startingfrom0title-0{
+    font-size: 4rem;
+}
+
+.startingfrom0-outro{
+    padding-top: 50px;
+}
+
+.startingfrom0-outro p{
+    padding-bottom: 1rem;
+}
+
+.startingfrom0-outro p + p{
+    font-weight: 800;
+}
+
+/* --- Speak his words section --- */
+
+
+
+.recordbutton{
+    position: relative;
+    top: 6rem;
+    display: block;
+    width: 72px;
+    height: 82px;
+    justify-self: center;
+}
+
+.words{
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.words p{
+    position: absolute;
+    width: 150px;
+    text-align: center;
+}
+
+.fashion{
+    top: 7rem;
+    left: 13rem;
+}
+
+.norules{
+    top: -3rem;
+    left: 7rem;
+}
+
+.truth{
+    left: 14rem;
+}
+
+.stopthinking{
+    top: 7rem;
+    right: 13rem;
+}
+
+/* --- New style --- */
+.newstyle-bg{
+    position: absolute;
+    top: -4rem;
+    left: -45rem;
+   
+    z-index: -3;
+}
+.newstylecontainer .titleflowercontainer{
+    justify-self: start;
+}
+
+.newstylecontainer{
+    position: relative;
+}
+
+.stretchsilhouette{
+    width: 269.088px;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.stretchhat{
+    width: 81.876px;
+    transform-origin: center;
+}
+
+.stretchdress{
+    width: 138.833px;
+    transform-origin: center;
+}
+
+.sizer{
+    width: 55.539px;
+    cursor: nwse-resize;
+}
+
+.sizedhat{
+    position: absolute;
+    top: 1rem;
+    left: 3.5rem;
+}
+
+.sizedress{
+    position: absolute;
+    top: 2rem;
+    left: -1.5rem;
+}
+
+.stretchdress,.stretchhat{
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+
+.hatcontainer{
+    position: relative;
+    top: -20.5rem;
+    left: 6rem;
+    width: 111.449px;
+    transform-origin: center;
+}
+
+.dresscontainer{
+    position: relative;
+    top: -18rem;
+    left: 4rem;
+    width: 166.501px;
+    transform-origin: center;
+}
+
+.stretchcontainer{
+    position: relative;
+    padding-top: 5rem;
+    justify-self: center;
+}
+
+/* --- The Goal --- */
+.thegoalcontainer p{
+    padding-bottom: 50px;
+}
+
+/* --- Caroussel --- */
+.carousselcontainer{
+    position: relative;
+}
+.carousselimgcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousselimg{
+    position: relative;
+    width: 160px;
+    padding-left: 7rem;
+    padding-right: 5rem;
+}
+
+.carousselimg p{
+    position: absolute;
+    text-align: center;
+    width: 126px;
+    top: 10.8rem;
+    left: 8.5rem;
+    color: white;
+}
+
+.carousselcontainer-bg{
+    position: absolute;
+    top: -1rem;
+    display: block;
+    width: 918px;
+    justify-self: center;
+}
+
+.caroussel-prevbutton{
+    position: absolute;
+    top: 4rem;
+}
+
+.caroussel-nextbutton{
+    position: absolute;
+    right: 0;
+    top: 4rem
+}
+
+/* --- Want more? --- */
+.booktickets{
+    padding-top: 1rem;
+    font-weight: 800;
+}
+
+.MoMulink{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MoMuLogo{
+    width: 93px;
+}
+
+.booktickets-button{
+    width: 132.85px;
+}
