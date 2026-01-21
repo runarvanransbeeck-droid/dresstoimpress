@@ -1,4 +1,4 @@
-const init = () => {
+const initmenuclick = () => {
     const button = document.querySelector('.hamburgermenubutton');
     const menu = document.querySelector('.hamburgermenu');
     button.addEventListener('click', () => {
@@ -6,3 +6,4 @@ const init = () => {
         menu.style.visibility = button.classList.contains('open') ? 'visible' : 'hidden';
     });
 }
+initmenuclick();

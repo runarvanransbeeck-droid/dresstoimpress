@@ -1,6 +1,6 @@
 const initstretch = () => {
     const frame = document.querySelector(".stretchcanvas");
-    const dragger = document.querySelector(".stretchcanvas-dragger");
+    const dragger = document.querySelector(".stretchcanvas__dragger");
 
     let isDragging = false;
 
