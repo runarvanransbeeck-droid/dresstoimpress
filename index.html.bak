@@ -24,7 +24,7 @@
         <img class="momulogo" src="src/assets/pngs/momulogo.png" alt="">
         <img class="hamburgermenubutton" src="src/assets/svgs/hamburgermenu.svg" alt="">
       </div>
-    <svg class="navbg" class="header__bgmobile" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="393" height="98" viewBox="0 0 393 98"
+    <svg class="navbg" class="header-bgmobile" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="393" height="98" viewBox="0 0 393 98"
       fill="none">
       <path
         d="M394.001 -1.0007L394.002 80.4219C393.771 80.3184 393.513 80.203 393.225 80.0806C391.732 79.4449 389.467 78.5669 386.352 77.5806C380.119 75.6077 370.482 73.2024 356.802 71.4372C329.441 67.9072 285.906 66.9376 221.072 77.1109C128.291 91.6696 72.529 95.7635 39.9831 96.2223C23.7112 96.4516 13.2516 95.7719 6.87611 95.0401C3.68916 94.6742 1.52535 94.2959 0.16818 94.012C-0.323255 93.9092 -0.708345 93.8163 -0.998027 93.7436L-0.997438 -1.00029L394.001 -1.0007Z"
@@ -44,21 +44,21 @@
     </nav>
     
     <main>
-      <img class="header__bgmobile" src="src/assets/pngs/headerbgmobile.png" alt="">
+      <img class="header-bgmobile" src="src/assets/pngs/headerbgmobile.png" alt="">
       
       <header>
-        <img class="header__flowerfadetop" src="src/assets/pngs/flowerfade.png" alt="">
-        <img class="header__flowerfademiddle" src="src/assets/pngs/flowerfade.png" alt="">
+        <img class="header-flowerfadetop" src="src/assets/pngs/flowerfade.png" alt="">
+        <img class="header-flowerfademiddle" src="src/assets/pngs/flowerfade.png" alt="">
         
         
         <div>
           <div class="Waltername">
-            <p class="Waltername__Walter">Walter</p>
-            <p class="Waltername__Van">Van</p>
-            <p class="Waltername__Beirendonck">Beirendonck</p>
+            <p class="Waltername-Walter">Walter</p>
+            <p class="Waltername-Van">Van</p>
+            <p class="Waltername-Beirendonck">Beirendonck</p>
           </div>
-          <p class="header__choicebetween">And his choice between</p>
-          <p class="header__commercialization">COMMERCIALIZATION</p>
+          <p class="header-choicebetween">And his choice between</p>
+          <p class="header-commercialization">COMMERCIALIZATION</p>
           <img class="mobilerotsymbol" src="src/assets/svgs/mobilerot.svg" alt="">
         </div>
     
@@ -76,7 +76,7 @@
           Walter designs with a playful and theatrical quality while drawing attention to social issues and challenging
           conventional ideas of beauty.
         </p>
-        <img class="initialgoal__waltervbpng" src="src/assets/pngs/waltervb.png" alt="">
+        <img class="initialgoal-waltervbpng" src="src/assets/pngs/waltervb.png" alt="">
       </article>
       <article class="partnershipcontainer">
         <div class="titleflowercontainer">
@@ -92,7 +92,7 @@
           story
           of how that happened.
         </p>
-        <img class="partnershipcontainer__designpng" src="src/assets/pngs/design1m.png" alt="">
+        <img class="partnershipcontainer-designpng" src="src/assets/pngs/design1m.png" alt="">
       </article>
     
       <article class="waltersthemescontainer" id="themes">
@@ -109,18 +109,18 @@
         </p>
         <div class="stretchcanvascontainer">
           <div class="stretchcanvas">
-            <img class="stretchcanvas__img" src="src/assets/pngs/wlt1.png" alt="">
-            <img class="stretchcanvas__img" src="src/assets/pngs/wlt2.png" alt="">
-            <img class="stretchcanvas__img" src="src/assets/pngs/wlt3.png" alt="">
+            <img class="stretchcanvas-img" src="src/assets/pngs/wlt1.png" alt="">
+            <img class="stretchcanvas-img" src="src/assets/pngs/wlt2.png" alt="">
+            <img class="stretchcanvas-img" src="src/assets/pngs/wlt3.png" alt="">
           </div>
           <img class="stretchpath" src="src/assets/svgs/stretchpath.svg" alt="">
-          <img class="stretchcanvas__dragger" src="src/assets/svgs/stretch.svg" alt="">
+          <img class="stretchcanvas-dragger" src="src/assets/svgs/stretch.svg" alt="">
         </div>
     
     
       </article>
       <article class="breakupcontainer" id="breakup">
-        <img class="breakupcontainer__swoop" src="src/assets/pngs/swoop.png" alt="">
+        <img class="breakupcontainer-swoop" src="src/assets/pngs/swoop.png" alt="">
         <div class="titleflowercontainer">
           <img class="flowertitlepng" src="src/assets/pngs/flowerorange.png" alt="">
           <h2 class="breakuptitle">Break-up</h2>
@@ -145,7 +145,7 @@
           autonomy
           slipping away. The collaboration had become driven more by sales expectations than creative expression.
         </p>
-        <p class="breakup__decision">
+        <p class="breakup-decision">
           Eventually, Walter made the decision
           to walk away.
         </p>
@@ -155,7 +155,7 @@
       <article class="startingfrom0container" id="starting0">
         <div class="startingfrom0title">
           <h1>STARTING FROM</h1>
-          <h1 class="startingfrom0title__0">0</h1>
+          <h1 class="startingfrom0title-0">0</h1>
         </div>
     
         <p>
@@ -166,7 +166,7 @@
           left to fight a costly legal battle that forced him to rebuild from nothing.
         </p>
     
-        <div class="startingfrom0__outro">
+        <div class="startingfrom0-outro">
           <p>
             So how do you rebuild after that?
           </p>
@@ -194,7 +194,7 @@
     
       </article>
       <article class="newstylecontainer" id="newstyle">
-        <img class="newstyle__bg" src="src/assets/pngs/grass2.png" alt="">
+        <img class="newstyle-bg" src="src/assets/pngs/grass2.png" alt="">
         <div class="titleflowercontainer">
           <img class="flowertitlepng" src="src/assets/pngs/flowergreenorange.png" alt="">
           <h2 class="newstyletitle">NEW STYLE</h2>
@@ -244,7 +244,7 @@
       </article>
     
       <article class="carousselcontainer">
-        <img class="carousselcontainer__bg" src="src/assets/pngs/caroussel.png" alt="">
+        <img class="carousselcontainer-bg" src="src/assets/pngs/caroussel.png" alt="">
         
         <div class="carousselloop">
           <div class="carousselimgcontainer carousselloop1">
@@ -301,8 +301,8 @@
           </div>
         </div>
         
-        <img class="caroussel__prevbutton" src="src/assets/svgs/previous.svg" alt="">
-        <img class="caroussel__nextbutton" src="src/assets/svgs/next.svg" alt="">
+        <img class="caroussel-prevbutton" src="src/assets/svgs/previous.svg" alt="">
+        <img class="caroussel-nextbutton" src="src/assets/svgs/next.svg" alt="">
       </article>
       <article class="wantmorecontainer" id="more">
         <div class="titleflowercontainer">
@@ -324,7 +324,7 @@
           <img class="MoMuLogo" src="src/assets/pngs/momulogo.png" alt="">
 
             <a class="bookticketscontainer" href="https://visit.momu.be/#/tickets/time?group=timeSlot_and_day">
-              <img class="booktickets__button" src="src/assets/svgs/booktickets.svg" alt="">
+              <img class="booktickets-button" src="src/assets/svgs/booktickets.svg" alt="">
               <p>BOOK TICKETS</p>
             </a>
 

@@ -1,8 +1,8 @@
 const loop = document.querySelector('.carousselloop');
 const loop1 = document.querySelector('.carousselloop1');
 const loop2 = document.querySelector('.carousselloop2');
-const prevbutton = document.querySelector('.caroussel-prevbutton');
-const nextbutton = document.querySelector('.caroussel-nextbutton');
+const prevbutton = document.querySelector('.caroussel__prevbutton');
+const nextbutton = document.querySelector('.caroussel__nextbutton');
 
 const initcaroussel = () => {
     let page = 1;
@@ -30,7 +30,7 @@ const initcaroussel = () => {
                 if (page === 1) {
                     page = 6;
                     loop2.style.order = 1;
-                    loop.scrollLeft = loop.scrollWidth - loop.clientWidth;
+                    loop.scrollLeft = loop.scrollWidth - (loop.clientWidth + 40);
                 } else {
                     page--;
                 }

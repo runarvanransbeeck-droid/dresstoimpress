@@ -1,3 +1,5 @@
+import { gsap } from "gsap"
+
 const hatsize = () => {
     const box = document.querySelector(".hatcontainer");
     const handle = document.querySelector(".sizedhat");
@@ -56,11 +58,49 @@ const dresssize = () => {
     });
 }
 
+const hatsizemobile = () => {
+    const box = document.querySelector(".hatcontainer");
+    const handle = document.querySelector(".sizedhat"); 
 
+    handle.addEventListener("touchstart", (e) =>{
+        e.preventDefault();
+        box.style.scale = 1.5;
+    });
+}
+
+const dresssizemobile = () => {
+    const box = document.querySelector(".dresscontainer");
+    const handle = document.querySelector(".sizedress");
+
+    handle.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        box.style.scale = 1.5;
+    });
+}
 
 const initsize = () => {
-    hatsize();
-    dresssize();
+
+    let mm = gsap.matchMedia();
+
+ 
+    mm.add("(min-width: 800px)", () => {
+        console.log("desktop size");
+
+        hatsize();
+        dresssize();
+        
+
+    });
+    
+    mm.add("(max-width: 799px)", () => {
+        console.log("mobile size");
+
+        hatsizemobile();
+        dresssizemobile();
+
+    });
+    
+    
 }
 
 initsize();

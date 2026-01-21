@@ -166,7 +166,7 @@ header {
     margin-bottom: 5rem;
 }
 
-.header__flowerfadetop {
+.header-flowerfadetop {
     position: absolute;
     top: 5%;
     left: 80%;
@@ -178,7 +178,7 @@ header {
 }
 
 @media (min-width:37.5em) {
-    .header__flowerfadetop {
+    .header-flowerfadetop {
         position: absolute;
         top: 5%;
         left: 80%;
@@ -194,7 +194,7 @@ header {
     }
 }
 
-.header__flowerfademiddle {
+.header-flowerfademiddle {
     position: absolute;
     top: 5rem;
     left: 2rem;
@@ -204,7 +204,7 @@ header {
     aspect-ratio: 67.64/60.36;
 }
 
-.header__bgmobile {
+.header-bgmobile {
     position: absolute;
     top: 7rem;
     left: 0;
@@ -220,7 +220,7 @@ header {
 }
 
 
-.Waltername__Walter {
+.Waltername-Walter {
     position: absolute;
     bottom: 6rem;
     left: 1rem;
@@ -232,7 +232,7 @@ header {
     line-height: normal;
 }
 
-.Waltername__Van {
+.Waltername-Van {
     position: absolute;
     top: 4rem;
     left: 7rem;
@@ -244,7 +244,7 @@ header {
     line-height: normal;
 }
 
-.Waltername__Beirendonck {
+.Waltername-Beirendonck {
     position: absolute;
     top: 8rem;
     left: 1rem;
@@ -256,7 +256,7 @@ header {
     line-height: normal;
 }
 
-.header__choicebetween {
+.header-choicebetween {
     margin-bottom: 1rem;
     justify-self: center;
     font-family: 'Ibarra Real Nova';
@@ -265,7 +265,7 @@ header {
     font-size: 1.75rem;
 }
 
-.header__commercialization {
+.header-commercialization {
     justify-self: center;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
@@ -279,8 +279,8 @@ header {
 
 /* --- Initial goal --- */
 
-.initialgoal__waltervbpng,
-.partnershipcontainer__designpng {
+.initialgoal-waltervbpng,
+.partnershipcontainer-designpng {
     display: block;
     justify-self: center;
     width: 9.375rem;
@@ -329,7 +329,7 @@ header {
     height: 11.2126rem;
 }
 
-.stretchcanvas__img {
+.stretchcanvas-img {
     width: 10.1961rem;
     height: 11.2126rem;
     padding-bottom: 5rem;
@@ -338,7 +338,7 @@ header {
     pointer-events: none;
 }
 
-.stretchcanvas__dragger {
+.stretchcanvas-dragger {
     width: 4.9534rem;
     height: 1.0625rem;
     transform: rotate(90deg);
@@ -346,7 +346,7 @@ header {
     justify-self: center;
 }
 
-.stretchcanvas__dragger:hover {
+.stretchcanvas-dragger:hover {
     cursor: ns-resize;
 }
 
@@ -359,7 +359,7 @@ header {
 }
 
 /* --- Break-up section --- */
-.breakupcontainer__swoop {
+.breakupcontainer-swoop {
     display: block;
     width: 16.4996rem;
     height: 2.5219rem;
@@ -381,7 +381,7 @@ header {
     height: 8.6875rem;
 }
 
-.breakup__decision {
+.breakup-decision {
     padding-top: 1.875rem;
     text-align: center;
     justify-self: center;
@@ -405,19 +405,19 @@ header {
     padding-bottom: 1.25rem;
 }
 
-.startingfrom0title__0 {
+.startingfrom0title-0 {
     font-size: 4rem;
 }
 
-.startingfrom0__outro {
+.startingfrom0-outro {
     padding-top: 3.125rem;
 }
 
-.startingfrom0__outro p {
+.startingfrom0-outro p {
     padding-bottom: 1rem;
 }
 
-.startingfrom0__outro p+p {
+.startingfrom0-outro p+p {
     font-weight: 800;
 }
 
@@ -472,7 +472,7 @@ header {
 }
 
 /* --- New style --- */
-.newstyle__bg {
+.newstyle-bg {
     position: absolute;
     top: -4rem;
     left: -45rem;
@@ -593,7 +593,7 @@ header {
     color: white;
 }
 
-.carousselcontainer__bg {
+.carousselcontainer-bg {
     position: absolute;
     top: -1rem;
     display: block;
@@ -601,17 +601,17 @@ header {
     justify-self: center;
 }
 
-.caroussel__prevbutton {
+.caroussel-prevbutton {
     position: absolute;
     top: 4rem;
 }
 
-.caroussel__prevbutton:hover,
-.caroussel__nextbutton:hover {
+.caroussel-prevbutton:hover,
+.caroussel-nextbutton:hover {
     scale: 1.1;
 }
 
-.caroussel__nextbutton {
+.caroussel-nextbutton {
     position: absolute;
     right: 0;
     top: 4rem
@@ -655,7 +655,7 @@ header {
     width: 5.8125rem;
 }
 
-.booktickets__button {
+.booktickets-button {
     width: 8.3031rem;
 }
 

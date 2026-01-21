@@ -27,11 +27,11 @@ const createCountdown = (selector, targetMonth) => {
 };
 
 const initTimers = () => {
-    createCountdown('.timegrid_1', 4);
-    createCountdown('.timegrid_2', 6);
-    createCountdown('.timegrid_3', 8);
-    createCountdown('.timegrid_4', 10);
-    createCountdown('.timegrid_5', 12);
+    createCountdown('.timegrid__1', 4);
+    createCountdown('.timegrid__2', 6);
+    createCountdown('.timegrid__3', 8);
+    createCountdown('.timegrid__4', 10);
+    createCountdown('.timegrid__5', 12);
 };
 
 initTimers();
