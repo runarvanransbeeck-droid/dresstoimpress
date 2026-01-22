@@ -14,9 +14,6 @@
     font-style: normal;
 }
 
-* {
-    color: #393939;
-}
 
 html {
     scroll-behavior: smooth;
@@ -26,6 +23,7 @@ body {
     min-width: 344px;
     margin: 0;
     background-color: var(--cyan);
+    color: #393939;
 }
 
 h1 {
@@ -376,6 +374,10 @@ header {
 }
 
 /* --- Break-up section --- */
+.breakupcontainer{
+    position: relative;
+    padding-bottom: 800px;
+}
 .breakupcontainer__swoop {
     display: block;
     width: 16.4996rem;
@@ -406,10 +408,25 @@ header {
 }
 
 .zipperplaceholder {
-    position: relative;
-    top: -30rem;
+    position: absolute;
+    display: block;
+    width: 939.4px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zipperplaceholder img{
     width: 100%;
-    height: 775px;
+    height: auto;
+}
+
+.zipper{
+    position: absolute;
+    display: block;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .startingfrom0__titlebg {
@@ -870,6 +887,12 @@ footer {
     .breakupimgcontainer img {
         width: 10rem;
         height: auto;
+    }
+
+    .breakup__part2{
+        min-width: unset;
+        width: 20rem;
+        justify-self: center;
     }
 
     .speakhiswordscontainer {
