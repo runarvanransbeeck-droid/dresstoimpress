@@ -68,7 +68,7 @@ gsap.matchMedia().add("(min-width: 600px)", () => {
     gsap.to(document.querySelector("#anim"), {
         scrollTrigger: {
             trigger: document.querySelector("#anim"),
-            start: 'top top-=100',
+            start: 'top top',
             end: document.querySelector(".speakercontainer"),
             onEnter: () => {
                 gsap.to($body, {
