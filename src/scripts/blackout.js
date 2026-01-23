@@ -11,7 +11,7 @@ gsap.matchMedia().add("(max-width: 599px)", () => {
     gsap.to(document.querySelector("#anim"), {
         scrollTrigger: {
             trigger: document.querySelector("#anim"),
-            start: 'top top-=400',
+            start: 'top top-=500',
             end: document.querySelector(".speakercontainer"),
             onEnter: () => {
                 gsap.to($body, {
