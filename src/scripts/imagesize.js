@@ -2,7 +2,7 @@ import { gsap } from "gsap"
 
 const hatsize = () => {
     const box = document.querySelector(".hatcontainer");
-    const handle = document.querySelector(".sizedhat");
+    const handle = document.querySelector(".sizerhat");
 
 
     let isDragging = false;
@@ -34,7 +34,7 @@ const hatsize = () => {
 
 const dresssize = () => {
     const box = document.querySelector(".dresscontainer");
-    const handle = document.querySelector(".sizedress");   
+    const handle = document.querySelector(".sizerdress");   
     let isDragging = false;
     
     let startX, startScale = 1; 
@@ -60,7 +60,7 @@ const dresssize = () => {
 
 const hatsizemobile = () => {
     const box = document.querySelector(".hatcontainer");
-    const handle = document.querySelector(".sizedhat"); 
+    const handle = document.querySelector(".sizerhat"); 
 
     handle.addEventListener("touchstart", (e) =>{
         e.preventDefault();
@@ -70,7 +70,7 @@ const hatsizemobile = () => {
 
 const dresssizemobile = () => {
     const box = document.querySelector(".dresscontainer");
-    const handle = document.querySelector(".sizedress");
+    const handle = document.querySelector(".sizerdress");
 
     handle.addEventListener("touchstart", (e) => {
         e.preventDefault();

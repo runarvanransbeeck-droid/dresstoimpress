@@ -4,7 +4,8 @@ const initstretch = () => {
 
     let isDragging = false;
 
-    dragger.addEventListener("mousedown", () => {
+    dragger.addEventListener("click", () => {
+        console.log("mousedown");
         isDragging = true;
         document.body.style.cursor = "ns-resize";
     });
@@ -27,7 +28,6 @@ const initstretch = () => {
         isDragging = false;
         document.body.style.cursor = "default";
     });
-
 }
 
 initstretch();

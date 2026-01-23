@@ -14,9 +14,6 @@
     font-style: normal;
 }
 
-* {
-    color: #393939;
-}
 
 html {
     scroll-behavior: smooth;
@@ -26,6 +23,7 @@ body {
     min-width: 344px;
     margin: 0;
     background-color: var(--cyan);
+    color: #393939;
 }
 
 h1 {
@@ -141,8 +139,7 @@ nav {
 
 
 .hamburgermenu {
-    visibility: hidden;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -179,6 +176,13 @@ nav {
 }
 
 /* Walter name header */
+.header__choicecontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding-left: 12rem;
+}
 
 header {
     position: relative;
@@ -274,12 +278,14 @@ header {
     font-size: 1.75rem;
 }
 
-.header__commercialization {
+.header__commercialization, .header__artistry {
     justify-self: center;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 1.8rem;
 }
+
+
 
 .mobilerotsymbol {
     display: block;
@@ -361,6 +367,7 @@ header {
     transform: rotate(90deg);
     display: block;
     justify-self: center;
+    -webkit-user-drag: none;
 }
 
 .stretchcanvas__dragger:hover {
@@ -376,6 +383,10 @@ header {
 }
 
 /* --- Break-up section --- */
+.breakupcontainer{
+    position: relative;
+    padding-bottom: 800px;
+}
 .breakupcontainer__swoop {
     display: block;
     width: 16.4996rem;
@@ -406,10 +417,25 @@ header {
 }
 
 .zipperplaceholder {
-    position: relative;
-    top: -30rem;
+    position: absolute;
+    display: block;
+    width: 939.4px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zipperplaceholder img{
     width: 100%;
-    height: 775px;
+    height: auto;
+}
+
+.zipper{
+    position: absolute;
+    display: block;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .startingfrom0__titlebg {
@@ -432,10 +458,10 @@ header {
 
 .startingfrom0container {
     position: relative;
-    ;
     margin-top: -25rem;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
     justify-self: center;
+    
 }
 
 .startingfrom0title {
@@ -557,16 +583,18 @@ header {
     cursor: nwse-resize;
 }
 
-.sizedhat {
+.sizerhat {
     position: absolute;
     top: 1rem;
     left: 3.5rem;
+    -webkit-user-drag: none;
 }
 
-.sizedress {
+.sizerdress {
     position: absolute;
     top: 2rem;
     left: -1.5rem;
+    -webkit-user-drag: none;
 }
 
 .stretchdress,
@@ -872,6 +900,21 @@ footer {
         height: auto;
     }
 
+    .breakup__part2{
+        min-width: unset;
+        width: 20rem;
+        justify-self: center;
+    }
+
+    .breakup__decision {
+        min-width: unset;
+        width: 15rem;
+    }
+
+    .zipper{
+        top: 15%;
+    }
+
     .speakhiswordscontainer {
         margin-bottom: 6.75rem;
     }
@@ -956,11 +999,13 @@ footer {
         margin-left: 20%;
         width: 22.5rem;
     }
-
-
 }
 
-
+@media (min-width: 900px) {
+    .zipperplaceholder {
+        width: 100vw;
+    }
+}
 
 @media (min-width: 64em) {
     main {
@@ -1064,4 +1109,23 @@ footer {
         width: 280px;
         height: auto;
     }
+
+    .zipperplaceholder {
+        top: 35%;
+    }
+
+    .zipper {
+        position: absolute;
+        display: block;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 252%;
+    }
+
+    .breakupcontainer {
+        position: relative;
+        padding-bottom: 1200px;
+    }
 }
+

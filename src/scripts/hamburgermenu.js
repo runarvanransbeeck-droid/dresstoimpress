@@ -3,7 +3,7 @@ const initmenuclick = () => {
     const menu = document.querySelector('.hamburgermenu');
     button.addEventListener('click', () => {
         button.classList.toggle('open');
-        menu.style.visibility = button.classList.contains('open') ? 'visible' : 'hidden';
+        menu.style.visibility = button.classList.contains('open') ? 'display' : 'none';
     });
 }
 initmenuclick();

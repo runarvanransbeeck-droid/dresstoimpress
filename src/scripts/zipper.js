@@ -2,6 +2,8 @@ import { DotLottie } from '@lottiefiles/dotlottie-web';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const player = new DotLottie({
@@ -12,12 +14,10 @@ const player = new DotLottie({
 gsap.to(player.canvas, {
   scrollTrigger: {
     trigger: player.canvas,
-    start: 'top top',
+    start: 'top bottom-=800',
     end: '+=1000',
-    pin: true,
-    scrub: true,
     onUpdate: (self) => {
       player.setFrame(self.progress * (player.totalFrames-1));
-    }
+    },
   },
 });
