@@ -19,6 +19,5 @@ gsap.to(player.canvas, {
     onUpdate: (self) => {
       player.setFrame(self.progress * (player.totalFrames-1));
     },
-    
   },
 });

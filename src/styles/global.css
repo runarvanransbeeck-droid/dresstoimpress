@@ -139,8 +139,7 @@ nav {
 
 
 .hamburgermenu {
-    visibility: hidden;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -177,6 +176,13 @@ nav {
 }
 
 /* Walter name header */
+.header__choicecontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding-left: 12rem;
+}
 
 header {
     position: relative;
@@ -272,12 +278,14 @@ header {
     font-size: 1.75rem;
 }
 
-.header__commercialization {
+.header__commercialization, .header__artistry {
     justify-self: center;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 1.8rem;
 }
+
+
 
 .mobilerotsymbol {
     display: block;
@@ -359,6 +367,7 @@ header {
     transform: rotate(90deg);
     display: block;
     justify-self: center;
+    -webkit-user-drag: none;
 }
 
 .stretchcanvas__dragger:hover {
@@ -574,16 +583,18 @@ header {
     cursor: nwse-resize;
 }
 
-.sizedhat {
+.sizerhat {
     position: absolute;
     top: 1rem;
     left: 3.5rem;
+    -webkit-user-drag: none;
 }
 
-.sizedress {
+.sizerdress {
     position: absolute;
     top: 2rem;
     left: -1.5rem;
+    -webkit-user-drag: none;
 }
 
 .stretchdress,
@@ -1106,9 +1117,10 @@ footer {
     .zipper {
         position: absolute;
         display: block;
-        top: 5%;
+        top: 15%;
         left: 50%;
         transform: translateX(-50%);
+        width: 252%;
     }
 
     .breakupcontainer {

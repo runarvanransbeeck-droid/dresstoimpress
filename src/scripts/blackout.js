@@ -118,3 +118,4 @@ gsap.matchMedia().add("(min-width: 600px)", () => {
         }
     });
 });
+
