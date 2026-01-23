@@ -433,7 +433,7 @@ header {
 .zipper{
     position: absolute;
     display: block;
-    top: -5rem;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
