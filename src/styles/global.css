@@ -433,7 +433,7 @@ header {
 .zipper{
     position: absolute;
     display: block;
-    top: 5%;
+    top: 10rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -842,6 +842,13 @@ footer {
 
 /* --- Media Queries --- */
 
+
+@media (min-width: 500px) {
+    .zipper {
+        top: 0;
+    }
+}
+
 @media (min-width: 37.5em) {
     
 
@@ -912,7 +919,7 @@ footer {
     }
 
     .zipper{
-        top: 15%;
+        top: 5rem;
     }
 
     .speakhiswordscontainer {
@@ -1000,6 +1007,8 @@ footer {
         width: 22.5rem;
     }
 }
+
+
 
 @media (min-width: 900px) {
     .zipperplaceholder {
@@ -1129,3 +1138,8 @@ footer {
     }
 }
 
+@media (min-width: 1200px) {
+    .zipper{
+        top: 10rem;
+    }
+}
