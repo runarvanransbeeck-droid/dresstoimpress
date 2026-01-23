@@ -433,7 +433,7 @@ header {
 .zipper{
     position: absolute;
     display: block;
-    top: 10rem;
+    top: 15rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -845,7 +845,7 @@ footer {
 
 @media (min-width: 500px) {
     .zipper {
-        top: 0;
+        top: 15rem;
     }
 }
 
@@ -916,10 +916,6 @@ footer {
     .breakup__decision {
         min-width: unset;
         width: 15rem;
-    }
-
-    .zipper{
-        top: 5rem;
     }
 
     .speakhiswordscontainer {
