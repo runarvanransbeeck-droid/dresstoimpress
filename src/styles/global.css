@@ -124,7 +124,7 @@ nav {
     height: 1.9166rem;
 }
 
-.navbarbuttons--inactive{
+.navbarbuttons--inactive {
     visibility: hidden;
     display: flex;
     flex-direction: row;
@@ -154,7 +154,8 @@ nav {
     z-index: 2;
 }
 
-.hamburgermenu li, .navbarbuttons--inactive li {
+.hamburgermenu li,
+.navbarbuttons--inactive li {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
     font-size: 1rem;
@@ -165,18 +166,19 @@ nav {
     width: 126px;
 }
 
-.navbarbuttons--inactive li a{
+.navbarbuttons--inactive li a {
     display: block;
     width: 100%;
     text-align: center;
 }
 
-.hamburgermenu li a:hover, .navbarbuttons--inactive li a:hover {
+.hamburgermenu li a:hover,
+.navbarbuttons--inactive li a:hover {
     color: var(--cyan);
 }
 
 /* Walter name header */
-.header__choicecontainer{
+.header__choicecontainer {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -278,7 +280,8 @@ header {
     font-size: 1.75rem;
 }
 
-.header__commercialization, .header__artistry {
+.header__commercialization,
+.header__artistry {
     justify-self: center;
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
@@ -325,10 +328,18 @@ header {
     justify-self: start;
 }
 
+.waltersthemescontainer {
+    position: relative;
+    height: 65rem;
+}
+
 .stretchcanvascontainer {
-    padding-top: 1.5625rem;
     justify-self: center;
-    margin-bottom: 25rem;
+    width: fit-content;
+}
+
+.stretchpathalligncontainer {
+    padding-top: 1.5625rem;
 }
 
 .stretchcanvas {
@@ -337,8 +348,9 @@ header {
     flex-direction: column;
     border: 0.125rem solid var(--green);
     border-width: 4px;
-    padding: 1.25rem;
-    height: 13.125rem;
+    padding: 1.5rem;
+    height: 210px;
+    width: 235px;
     overflow: hidden;
     align-items: center;
 }
@@ -353,12 +365,13 @@ header {
 }
 
 .stretchcanvas__img {
-    width: 10.1961rem;
-    height: 11.2126rem;
+    width: 163.14px;
+    height: 179.4px;
     padding-bottom: 5rem;
     user-select: none;
     -webkit-user-drag: none;
     pointer-events: none;
+    flex-shrink: 0
 }
 
 .stretchcanvas__dragger {
@@ -377,16 +390,19 @@ header {
 
 .stretchpath {
     position: absolute;
+    top: 40rem;
+    height: 30rem;
     z-index: -1;
     display: block;
     justify-self: center;
 }
 
 /* --- Break-up section --- */
-.breakupcontainer{
+.breakupcontainer {
     position: relative;
     padding-bottom: 900px;
 }
+
 .breakupcontainer__swoop {
     display: block;
     width: 16.4996rem;
@@ -425,12 +441,12 @@ header {
     transform: translateX(-50%);
 }
 
-.zipperplaceholder img{
+.zipperplaceholder img {
     width: 100%;
     height: auto;
 }
 
-.zipper{
+.zipper {
     position: absolute;
     display: block;
     top: 0;
@@ -461,7 +477,7 @@ header {
     margin-top: -25rem;
     margin-bottom: 20rem;
     justify-self: center;
-    
+
 }
 
 .startingfrom0title {
@@ -841,7 +857,12 @@ footer {
 }
 
 /* --- Media Queries --- */
-
+@media (min-width: 400px) {
+    .stretchpath {
+        top: 35rem;
+        height: 30rem;
+    }
+}
 
 @media (min-width: 500px) {
     .zipper {
@@ -850,7 +871,7 @@ footer {
 }
 
 @media (min-width: 37.5em) {
-    
+
 
     .initialgoalcontainer,
     .partnershipcontainer,
@@ -873,7 +894,7 @@ footer {
         height: 5.6765rem;
     }
 
-    .header__flowerfademiddle{
+    .header__flowerfademiddle {
         left: 10rem;
     }
 
@@ -887,13 +908,27 @@ footer {
         height: auto;
     }
 
+    .waltersthemescontainer {
+        height: 70rem;
+    }
+
     .stretchcanvas {
         height: 18rem;
+        width: fit-content;
     }
 
     .stretchcanvas__img {
         width: 14rem;
         height: auto;
+    }
+
+    .stretchpath {
+        top: 38rem;
+        height: 35rem;
+    }
+
+    .stretchcanvas__dragger:hover {
+        cursor: ew-resize;
     }
 
     .breakupimgcontainer {
@@ -907,7 +942,7 @@ footer {
         height: auto;
     }
 
-    .breakup__part2{
+    .breakup__part2 {
         min-width: unset;
         width: 20rem;
         justify-self: center;
@@ -1004,8 +1039,6 @@ footer {
     }
 }
 
-
-
 @media (min-width: 900px) {
     .zipperplaceholder {
         width: 100vw;
@@ -1025,26 +1058,31 @@ footer {
         src: "url('/src/assets/images/Navbg_desktop.png') no-repeat center/cover";
         height: 160.07px;
     }
-    .hamburgermenubutton{
+
+    .hamburgermenubutton {
         display: none;
     }
+
     .navbarbuttons--inactive {
         visibility: visible;
     }
-    h1{
+
+    h1 {
         font-size: 82px;
     }
-    h2{
+
+    h2 {
         font-size: 62px;
     }
-    p{
+
+    p {
         font-size: 20px;
     }
 
-    header{
+    header {
         padding-top: 18rem;
     }
-    
+
 
     .header__flowerfadetop {
         position: absolute;
@@ -1055,9 +1093,7 @@ footer {
         height: auto;
     }
 
-    
-
-    .headertextcontainer{
+    .headertextcontainer {
         width: 100%;
     }
 
@@ -1067,7 +1103,7 @@ footer {
         left: 0;
         top: 25rem;
     }
-    
+
     .Waltername {
         position: relative;
         justify-self: center;
@@ -1077,17 +1113,17 @@ footer {
         top: -5rem;
         left: 0;
     }
-    
-    
+
+
     .Waltername__Walter {
         font-size: 100px;
     }
-    
+
     .Waltername__Van {
         font-size: 82px;
         left: 38%;
     }
-    
+
     .Waltername__Beirendonck {
         font-size: 100px;
         left: 12%;
@@ -1096,23 +1132,77 @@ footer {
     .header__choicebetween {
         font-size: 62px;
     }
-    
-    .header__commercialization{
+
+    .header__commercialization {
         font-size: 72px;
     }
 
-    .mobilerotsymbol{
+    .mobilerotsymbol {
         display: none;
     }
 
-    .flowertitlepng{
+    .flowertitlepng {
         width: 107px;
         height: auto;
     }
 
-    .initialgoal__waltervbpng, .partnershipcontainer__designpng {
+    .initialgoal__waltervbpng,
+    .partnershipcontainer__designpng {
         width: 280px;
         height: auto;
+    }
+
+    .waltersthemescontainer {
+        height: 40rem;
+    }
+
+    .stretchcanvas {
+        display: flex;
+        flex-direction: row;
+        height: 18rem;
+        width: 220px;
+    }
+
+    .stretchcanvas__img {
+        width: 200px;
+        height: auto;
+        padding-bottom: 0;
+        padding-right: 3rem;
+        flex-shrink: 0;
+    }
+
+    .stretchcanvascontainer {
+        display: flex;
+        height: fit-content;
+        justify-self: unset;
+        flex-direction: row;
+    }
+
+    .stretchcanvas__dragger {
+        transform: rotate(0deg);
+        justify-self: unset;
+        align-self: center;
+        margin-left: -4rem;
+        width: 129.41px;
+        height: 39px;
+    }
+
+    .stretchpathalligncontainer {
+        display: flex;
+        padding-top: 3rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stretchpath {
+        position: relative;
+        transform: rotate(90deg);
+        top: auto;
+        left: 33rem;
+        height: auto;
+        z-index: auto;
     }
 
     .zipperplaceholder {
@@ -1135,7 +1225,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    .zipper{
+    .zipper {
         top: 10rem;
     }
 }
