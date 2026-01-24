@@ -4,17 +4,18 @@ const initstretch = () => {
 
     let isDragging = false;
 
-    dragger.addEventListener("click", () => {
+    dragger.addEventListener("pointerdown", (e) => {
         console.log("mousedown");
         isDragging = true;
+        dragger.setPointerCapture?.(e.pointerId);
         document.body.style.cursor = "ns-resize";
     });
 
-    document.addEventListener("mousemove", (e) => {
+    document.addEventListener("pointermove", (e) => {
         if (!isDragging) return;
 
         const minHeight = 210;
-        const maxHeight = 800;
+        const maxHeight = 700;
 
         const newHeight = Math.min(
             Math.max(e.clientY - frame.getBoundingClientRect().top, minHeight),
@@ -24,10 +25,13 @@ const initstretch = () => {
         frame.style.height = `${newHeight}px`;
     });
 
-    document.addEventListener("mouseup", () => {
+    const stopDragging = () => {
         isDragging = false;
         document.body.style.cursor = "default";
-    });
+    };
+
+    window.addEventListener("pointerup", stopDragging);
+    window.addEventListener("pointercancel", stopDragging);
 }
 
 initstretch();
