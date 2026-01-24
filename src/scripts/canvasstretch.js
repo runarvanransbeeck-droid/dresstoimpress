@@ -1,3 +1,4 @@
+import { min } from '@tensorflow/tfjs-core';
 import gsap from 'gsap';
 
 const initstretch = () => {
@@ -24,8 +25,8 @@ const initstretch = () => {
 
             const minHeight = 210;
             const maxHeight = 800;
-
-            const newHeight = Math.min(
+            
+            Math.min(
                 Math.max(e.clientY - frame.getBoundingClientRect().top, minHeight),
                 maxHeight
             );
