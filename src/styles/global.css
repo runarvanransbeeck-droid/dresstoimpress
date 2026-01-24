@@ -927,6 +927,10 @@ footer {
         height: 35rem;
     }
 
+    .stretchcanvas__dragger:hover {
+        cursor: ew-resize;
+    }
+
     .breakupimgcontainer {
         padding: 0 2rem;
         padding-top: 1.875rem;
