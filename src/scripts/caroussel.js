@@ -39,8 +39,8 @@ const initcaroussel = () => {
         }, 400);
     };
 
-    prevbutton.addEventListener('click', () => handleScroll('prev'));
-    nextbutton.addEventListener('click', () => handleScroll('next'));
+    prevbutton.addEventListener('pointerdown', () => handleScroll('prev'));
+    nextbutton.addEventListener('pointerdown', () => handleScroll('next'));
 };
 
 initcaroussel();
