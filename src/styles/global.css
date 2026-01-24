@@ -125,15 +125,7 @@ nav {
 }
 
 .navbarbuttons--inactive {
-    visibility: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 71%;
-    padding-right: 7%;
-    gap: 2rem;
+    display: none;
 }
 
 
@@ -179,18 +171,14 @@ nav {
 
 /* Walter name header */
 .header__choicecontainer {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    padding-left: 12rem;
+    gap: 35rem;
 }
 
 header {
     position: relative;
     overflow: hidden;
     width: 100%;
-    z-index: -2;
+    z-index: 1;
     padding-top: 7rem;
     margin-bottom: 5rem;
 }
@@ -288,11 +276,8 @@ header {
     font-size: 1.8rem;
 }
 
-
-
-.mobilerotsymbol {
-    display: block;
-    justify-self: center;
+.header__artistry::before {
+    content: "AND ";
 }
 
 /* --- Initial goal --- */
@@ -1064,7 +1049,14 @@ footer {
     }
 
     .navbarbuttons--inactive {
-        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 71%;
+        padding-right: 7%;
+        gap: 2rem;
     }
 
     h1 {
@@ -1083,6 +1075,16 @@ footer {
         padding-top: 18rem;
     }
 
+    .header__choicecontainer {
+        display: flex;
+        flex-direction: row;
+        gap: 35rem;
+        transition: transform 0.4s ease;
+    }
+
+    .header__choicecontainer:hover {
+        transform: translateX(-80rem);
+    }
 
     .header__flowerfadetop {
         position: absolute;
@@ -1131,14 +1133,16 @@ footer {
 
     .header__choicebetween {
         font-size: 62px;
+        justify-content: space-between;
     }
 
-    .header__commercialization {
+    .header__commercialization,
+    .header__artistry {
         font-size: 72px;
     }
 
-    .mobilerotsymbol {
-        display: none;
+    .header__artistry{
+        padding-right: 52rem;
     }
 
     .flowertitlepng {
@@ -1148,8 +1152,32 @@ footer {
 
     .initialgoal__waltervbpng,
     .partnershipcontainer__designpng {
-        width: 280px;
+        display: block;
+        width: 100%;
         height: auto;
+    }
+
+    .initialgoalcontainer {
+        display: grid;
+        grid-template-columns: minmax(200px, 280px) auto;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+    }
+
+    .initialgoal__titletextcontainer {
+        grid-column: 2;
+        grid-row: 1;
+        width: 600px;
+    }
+
+    .initialgoal__waltervbpng {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    .titleflowercontainer {
+        justify-self: start;
     }
 
     .waltersthemescontainer {
@@ -1165,7 +1193,7 @@ footer {
 
     .stretchcanvas__img {
         width: 200px;
-        height: auto;
+        height: 200px;
         padding-bottom: 0;
         padding-right: 3rem;
         flex-shrink: 0;
