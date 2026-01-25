@@ -4,6 +4,34 @@
     --cyan: #B3FFE5;
     --pink: #FF5887;
     --green: #08FF55;
+
+    /* Spacing tokens - frequently used rem values */
+    --space-1: 1rem;
+    --space-2: 2rem;
+    --space-3: 3rem;
+    --space-4: 4rem;
+    --space-5: 5rem;
+    --space-6: 6rem;
+    --space-7: 7rem;
+    --space-8: 8rem;
+    --space-10: 10rem;
+    --space-12: 12rem;
+    --space-15: 15rem;
+    --space-18: 18rem;
+    --space-20: 20rem;
+    --space-25: 25rem;
+    --space-35: 35rem;
+    --space-37-5: 37.5rem;
+    --space-40: 40rem;
+
+    /* Typography tokens */
+    --font-size-1-25: 1.25rem;
+    --font-size-1-5: 1.5rem;
+    --font-size-1-875: 1.875rem;
+    --font-size-2-5: 2.5rem;
+    --font-size-3-875: 3.875rem;
+    --font-size-6-25: 6.25rem;
+    --font-size-12-5: 12.5rem;
 }
 
 @font-face {
@@ -19,8 +47,14 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
-    min-width: 344px;
+    min-width: 21.5rem;
     margin: 0;
     background-color: var(--cyan);
     color: #393939;
@@ -29,7 +63,7 @@ body {
 h1 {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: var(--space-2);
     justify-self: center;
 }
 
@@ -39,7 +73,7 @@ h2 {
     font-weight: 400;
     font-size: 1.75rem;
     justify-self: center;
-    padding-bottom: 0.9375rem;
+    padding-bottom: var(--space-1);
 }
 
 p {
@@ -59,10 +93,9 @@ main {
 }
 
 article {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 8.75rem;
-
+    margin-left: var(--space-1);
+    margin-right: var(--space-1);
+    margin-bottom: var(--space-8);
 }
 
 article,
@@ -92,7 +125,7 @@ nav {
 }
 
 .navtop {
-    margin-top: 1.5rem;
+    margin-top: var(--font-size-1-5);
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -110,14 +143,14 @@ nav {
 
 .momulogo {
     padding-left: 1rem;
-    width: 5.375rem;
+    width: 5rem;
     height: auto;
 }
 
 .hamburgermenubutton {
     padding-right: 2rem;
     width: 2.5rem;
-    height: 1.9166rem;
+    height: 2rem;
 }
 
 .navbarbuttons--inactive {
@@ -132,7 +165,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    padding-top: 3rem;
+    padding-top: var(--space-3);
     margin-top: -1em;
     justify-self: right;
     background: rgba(255, 166, 122, 0.70);
@@ -146,12 +179,12 @@ nav {
 .navbarbuttons--inactive li {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: var(--space-1);
 }
 
 .navbarbuttons--inactive li {
-    font-size: 20px;
-    width: 126px;
+    font-size: 1.25rem;
+    width: 7.875rem;
 }
 
 .navbarbuttons--inactive li a {
@@ -191,7 +224,7 @@ nav {
 
 /* Walter name header */
 .header__choicecontainer {
-    gap: 35rem;
+    gap: var(--space-35);
 }
 
 header {
@@ -199,56 +232,60 @@ header {
     overflow: hidden;
     width: 100%;
     z-index: 1;
-    padding-top: 7rem;
-    margin-bottom: 5rem;
+    padding-top: var(--space-7);
+    margin-bottom: var(--space-5);
 }
 
 .header__flowerfadetop {
     position: absolute;
-    top: 4rem;
+    top: var(--space-4);
     left: 80%;
     z-index: -2;
-    width: 5.2408rem;
-    height: 4.6765rem;
+    width: 5.2rem;
+    height: 4.6rem;
     transform: rotate(-11.023deg);
     aspect-ratio: 83.85/74.82;
 }
 
 .header__flowerfademiddle {
     position: absolute;
-    top: 12rem;
-    left: 2rem;
-    width: 4.2278rem;
-    height: 3.7726rem;
+    top: var(--space-12);
+    left: var(--space-2);
+    width: 4.2rem;
+    height: 3.7rem;
     transform: rotate(-136.085deg);
-    aspect-ratio: 67.64/60.36;
 }
 
 .header__bgmobile {
     position: absolute;
-    top: 1.5rem;
+    top: var(--font-size-1-5);
     left: 0;
     width: 100%;
     height: 22.5rem;
     z-index: -3;
 }
 
-.header__bgmobile img {
+.header__bgmobile img,
+.intropartnershipsectionbg img,
+.thegoalbg img,
+.carousselcontainer__bg img,
+.footer_mobile img {
     width: 100%;
     height: 100%;
 }
 
+
 .Waltername {
     position: relative;
     z-index: -1;
-    height: 12.3125rem;
+    height: 12rem;
 }
 
 
 .Waltername__Walter {
     position: absolute;
-    bottom: 6rem;
-    left: 1rem;
+    bottom: var(--space-6);
+    left: var(--space-1);
     color: #FF5887;
     font-family: 'Archivo Black', sans-serif;
     font-size: 4.375rem;
@@ -260,8 +297,8 @@ header {
 
 .Waltername__Van {
     position: absolute;
-    top: 4rem;
-    left: 7rem;
+    top: var(--space-4);
+    left: var(--space-7);
     color: var(--pink);
     font-family: 'Archivo Black', sans-serif;
     font-size: 3.875rem;
@@ -273,8 +310,8 @@ header {
 
 .Waltername__Beirendonck {
     position: absolute;
-    top: 8rem;
-    left: 1rem;
+    top: var(--space-8);
+    left: var(--space-1);
     color: var(--pink);
     font-family: 'Archivo Black', sans-serif;
     font-size: 3rem;
@@ -285,7 +322,7 @@ header {
 }
 
 .header__choicebetween {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-1);
     justify-self: center;
     font-family: 'Ibarra Real Nova';
     font-style: italic;
@@ -311,15 +348,15 @@ header {
 .partnershipcontainer__designpng {
     display: block;
     justify-self: center;
-    width: 9.375rem;
-    height: 9.375rem;
+    width: 9.4rem;
+    height: 9.4rem;
     padding-top: 2.5rem;
 }
 
 .mustanglogo {
     display: block;
     justify-self: center;
-    width: 18.125rem;
+    width: 18rem;
     height: 4.75rem;
     height: auto;
 }
@@ -328,7 +365,7 @@ header {
     position: absolute;
     top: 40rem;
     width: 100%;
-    height: 450.35px;
+    height: 28rem;
     z-index: -1;
 }
 
@@ -340,7 +377,7 @@ header {
 
 .waltersthemescontainer {
     position: relative;
-    height: 65rem;
+    height: var(--space-65rem);
 }
 
 .stretchcanvascontainer {
@@ -349,7 +386,7 @@ header {
 }
 
 .stretchpathalligncontainer {
-    padding-top: 1.5625rem;
+    padding-top: 1.5rem;
 }
 
 .stretchcanvas {
@@ -357,10 +394,10 @@ header {
     display: flex;
     flex-direction: column;
     border: 0.125rem solid var(--green);
-    border-width: 4px;
+    border-width: 0.25rem;
     padding: 1.5rem;
-    height: 210px;
-    width: 235px;
+    height: 13.125rem;
+    width: 14.6875rem;
     overflow: hidden;
     align-items: center;
 }
@@ -370,13 +407,13 @@ header {
 .imagebackgroundshape {
     z-index: -1;
     position: relative;
-    width: 10.1961rem;
-    height: 11.2126rem;
+    width: 10rem;
+    height: 11rem;
 }
 
 .stretchcanvas__img {
-    width: 163.14px;
-    height: 179.4px;
+    width: 10rem;
+    height: 11rem;
     padding-bottom: 5rem;
     user-select: none;
     -webkit-user-drag: none;
@@ -385,8 +422,8 @@ header {
 }
 
 .stretchcanvas__dragger {
-    width: 4.9534rem;
-    height: 1.0625rem;
+    width: 5rem;
+    height: 1rem;
     transform: rotate(90deg);
     display: block;
     justify-self: center;
@@ -401,7 +438,7 @@ header {
 .stretchpath {
     position: absolute;
     top: 40rem;
-    height: 30rem;
+    height: var(--space-20);
     z-index: -1;
     display: block;
     justify-self: center;
@@ -410,13 +447,13 @@ header {
 /* --- Break-up section --- */
 .breakupcontainer {
     position: relative;
-    padding-bottom: 900px;
+    padding-bottom: 56.25rem;
 }
 
 .breakupcontainer__swoop {
     display: block;
-    width: 16.4996rem;
-    height: 2.5219rem;
+    width: 16.5rem;
+    height: 2rem;
     justify-self: center;
 }
 
@@ -426,8 +463,8 @@ header {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    padding-top: 1.875rem;
-    padding-bottom: 1.875rem;
+    padding-top: var(--font-size-1-875);
+    padding-bottom: var(--font-size-1-875);
 }
 
 .breakupimgcontainer img {
@@ -445,7 +482,7 @@ header {
 .zipperplaceholder {
     position: absolute;
     display: block;
-    width: 939.4px;
+    width: 58.7rem;
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
@@ -469,7 +506,7 @@ header {
     top: 2rem;
     width: 102%;
     left: -2rem;
-    height: 35px;
+    height: 2rem;
     z-index: -1;
 }
 
@@ -477,8 +514,8 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 290px;
-    height: 15px;
+    width: 18rem;
+    height: 1rem;
     z-index: -1;
 }
 
@@ -517,16 +554,16 @@ header {
 
 .recordbutton {
     position: relative;
-    top: 6rem;
+    top: var(--space-6);
     display: block;
     width: 4.5rem;
-    height: 5.125rem;
+    height: 5.1rem;
     justify-self: center;
     z-index: 10;
 }
 
 .recordbutton:hover {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .recordbutton:active {
@@ -535,8 +572,8 @@ header {
 
 .words {
     position: relative;
-    width: 21.875rem;
-    height: 15.625rem;
+    width: 21.8rem;
+    height: 15.6rem;
     justify-self: center;
 }
 
@@ -547,34 +584,34 @@ header {
 }
 
 .fashionisexpression {
-    width: 147px;
+    width: 9rem;
     top: 7rem;
     right: 1rem;
     text-align: right;
 }
 
 .norulesjustyou {
-    width: 95px;
+    width: 6rem;
     top: -4rem;
     left: 7rem;
     text-align: center;
 }
 
 .wearyourtruth {
-    width: 108px;
+    width: 6.75rem;
     left: 14rem;
     text-align: right;
 }
 
 .stopthinkingstartbeing {
-    width: 179px;
+    width: 11rem;
     top: 7rem;
     left: 0;
     text-align: left;
 }
 
 .freedomisalook {
-    width: 129px;
+    width: 8rem;
     left: 0;
     text-align: left;
 }
@@ -652,7 +689,7 @@ header {
     position: relative;
     top: -18rem;
     left: 4rem;
-    width: 10.4063rem;
+    width: 10rem;
     transform-origin: center;
 }
 
@@ -665,6 +702,8 @@ header {
 /* --- The Goal --- */
 .thegoalcontainer {
     position: relative;
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-10);
 }
 
 .thegoalbg {
@@ -672,7 +711,7 @@ header {
     top: 0;
     width: 110%;
     left: -5%;
-    height: 467px;
+    height: 29rem;
     z-index: -1;
 }
 
@@ -713,7 +752,7 @@ header {
     text-align: center;
     align-items: center;
     width: 7.875rem;
-    height: 70px;
+    height: 4.375rem;
     top: 11rem;
     left: 15%;
 }
@@ -751,7 +790,7 @@ header {
 
 /* --- Want more? --- */
 .bookticketscontainer {
-    padding-top: 2rem;
+    padding-top: var(--space-2);
     position: relative;
 }
 
@@ -763,7 +802,7 @@ header {
     position: absolute;
     top: 40%;
     left: 12%;
-    width: 5.625rem;
+    width: 5.6rem;
     min-width: 10%;
     font-weight: 800;
     text-decoration: underline;
@@ -776,18 +815,18 @@ header {
 }
 
 .MoMulink {
-    padding-top: 2.8125rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .MoMuLogo {
-    width: 5.8125rem;
+    width: 5.8rem;
 }
 
 .booktickets__button {
-    width: 8.3031rem;
+    width: 8.3rem;
 }
 
 /* --- Footer --- */
@@ -876,14 +915,14 @@ footer {
 }
 
 /* --- Media Queries --- */
-@media (min-width: 400px) {
+@media (min-width: 25em) {
     .stretchpath {
         top: 35rem;
         height: 30rem;
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 31.25em) {
     .zipper {
         top: 15rem;
     }
@@ -909,8 +948,8 @@ footer {
     .header__flowerfadetop {
         top: 6rem;
         left: 80%;
-        width: 6.2408rem;
-        height: 5.6765rem;
+        width: 6.2rem;
+        height: 5.7rem;
     }
 
     .header__flowerfademiddle {
@@ -981,7 +1020,7 @@ footer {
     }
 
     .words p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .fashionisexpression {
@@ -990,12 +1029,12 @@ footer {
     }
 
     .norulesjustyou {
-        width: 120px;
+        width: 7.5rem;
         top: -5rem;
     }
 
     .wearyourtruth {
-        width: 140px;
+        width: 8.75rem;
         left: 15rem;
     }
 
@@ -1005,7 +1044,7 @@ footer {
     }
 
     .freedomisalook {
-        width: 150px;
+        width: 9.375rem;
         left: -3rem;
     }
 
@@ -1039,7 +1078,7 @@ footer {
     .dresscontainer {
         position: relative;
         top: -21.8rem;
-        width: 10.4063rem;
+        width: 10rem;
         transform-origin: center;
     }
 
@@ -1048,7 +1087,7 @@ footer {
         top: 0;
         width: 124%;
         left: -12%;
-        height: 467px;
+        height: 29rem;
         z-index: -1;
     }
 
@@ -1058,14 +1097,14 @@ footer {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50em) {
     .carousselloop {
         margin-left: 13%;
         width: 35rem;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 56.25em) {
     .zipperplaceholder {
         width: 100vw;
     }
@@ -1075,7 +1114,7 @@ footer {
     }
 }
 
-@media (min-width: 975px) {
+@media (min-width: 61em) {
     .carousselloop {
         margin-left: 10%;
         width: 48rem;
@@ -1088,11 +1127,11 @@ footer {
     }
 
     .momulogo {
-        width: 168px;
+        width: 10.5rem;
     }
 
     .navbg {
-        height: 160.07px;
+        height: 10rem;
     }
 
     .hamburgermenubutton {
@@ -1111,15 +1150,15 @@ footer {
     }
 
     h1 {
-        font-size: 82px;
+        font-size: 5.125rem;
     }
 
     h2 {
-        font-size: 62px;
+        font-size: 3.875rem;
     }
 
     p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     header {
@@ -1142,7 +1181,7 @@ footer {
         top: -10%;
         left: 80%;
         z-index: -2;
-        width: 293px;
+        width: 18rem;
         height: auto;
     }
 
@@ -1151,7 +1190,7 @@ footer {
     }
 
     .header__flowerfademiddle {
-        width: 128.63px;
+        width: 8rem;
         height: auto;
         left: 0;
         top: 25rem;
@@ -1161,35 +1200,35 @@ footer {
         position: relative;
         justify-self: center;
         z-index: -1;
-        width: 829px;
-        height: 12.3125rem;
+        width: 51rem;
+        height: 12rem;
         top: -5rem;
         left: 0;
     }
 
 
     .Waltername__Walter {
-        font-size: 100px;
+        font-size: 6.25rem;
     }
 
     .Waltername__Van {
-        font-size: 82px;
+        font-size: 5.125rem;
         left: 38%;
     }
 
     .Waltername__Beirendonck {
-        font-size: 100px;
+        font-size: 6.25rem;
         left: 12%;
     }
 
     .header__choicebetween {
-        font-size: 62px;
+        font-size: 3.875rem;
         justify-content: space-between;
     }
 
     .header__commercialization,
     .header__artistry {
-        font-size: 72px;
+        font-size: 4.5rem;
     }
 
     .header__artistry {
@@ -1201,7 +1240,7 @@ footer {
     }
 
     .flowertitlepng {
-        width: 107px;
+        width: 6.7rem;
         height: auto;
     }
 
@@ -1214,7 +1253,7 @@ footer {
 
     .initialgoalcontainer {
         display: grid;
-        grid-template-columns: minmax(200px, 280px) auto;
+        grid-template-columns: minmax(12.5rem, 17.5rem) auto;
         grid-template-rows: auto;
         justify-content: space-evenly;
         gap: 1rem;
@@ -1222,7 +1261,7 @@ footer {
 
     .partnershipcontainer {
         display: grid;
-        grid-template-columns: auto minmax(200px, 280px);
+        grid-template-columns: auto minmax(12.5rem, 17.5rem);
         grid-template-rows: auto;
         justify-content: space-evenly;
         gap: 1rem;
@@ -1231,13 +1270,13 @@ footer {
     .initialgoal__titletextcontainer {
         grid-column: 2;
         grid-row: 1;
-        width: 600px;
+        width: 37.5rem;
     }
 
     .partnership_titletextcontainer {
         grid-column: 1;
         grid-row: 1;
-        width: 600px;
+        width: 37.5rem;
     }
 
     .partnershipcontainer__designpng {
@@ -1258,19 +1297,19 @@ footer {
 
     .waltersthemescontainer {
         height: 40rem;
-        width: 600px;
+        width: 37.5rem;
     }
 
     .stretchcanvas {
         display: flex;
         flex-direction: row;
         height: 18rem;
-        width: 220px;
+        width: 13.75rem;
     }
 
     .stretchcanvas__img {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
         padding-bottom: 0;
         padding-right: 3rem;
         flex-shrink: 0;
@@ -1288,8 +1327,8 @@ footer {
         justify-self: unset;
         align-self: center;
         margin-left: -4rem;
-        width: 129.41px;
-        height: 39px;
+        width: 8rem;
+        height: 2rem;
     }
 
     .stretchpathalligncontainer {
@@ -1325,7 +1364,7 @@ footer {
 
     .breakupcontainer {
         position: relative;
-        padding-bottom: 1200px;
+        padding-bottom: 75rem;
     }
 
     .breakupcontainer__titlecontainer,
@@ -1339,35 +1378,35 @@ footer {
 
     .words p {
         font-weight: 800;
-        font-size: 35px;
+        font-size: 2rem;
     }
 
     .norulesjustyou {
-        width: 412px;
+        width: 25.75rem;
         top: -3rem;
         left: 15rem;
     }
 
     .stopthinkingstartbeing {
-        width: 400px;
+        width: 25rem;
         top: -5rem;
         left: -15rem;
     }
 
     .freedomisalook {
-        width: 407px;
+        width: 25.4rem;
         top: 5rem;
         left: -20rem;
     }
 
     .wearyourtruth {
-        width: 383px;
+        width: 24rem;
         top: 4rem;
     }
 
     .fashionisexpression {
         top: 10rem;
-        width: 465px;
+        width: 29rem;
     }
 
     .newstylecontainer__contentcontainer {
@@ -1377,12 +1416,12 @@ footer {
         justify-content: space-evenly;
         gap: 3rem;
         width: 100%;
-        height: 600px;
+        height: 37.5rem;
         overflow: hidden;
     }
 
     .newstylecontainer__titletextcontainer {
-        width: 400px;
+        width: 25rem;
         height: fit-content;
     }
 
@@ -1402,7 +1441,7 @@ footer {
     }
 
     .thegoaltitle {
-        font-size: 80px;
+        font-size: 5rem;
     }
 
     .carousselloop {
@@ -1411,19 +1450,19 @@ footer {
     }
 
     .carousselimg {
-        width: 275px;
+        width: 17rem;
         height: auto;
-        margin-right: 59px;
+        margin-right: 3.7rem;
     }
 
     .carousseltextcontainer {
         top: 20rem;
         left: 28%;
-        width: 145px;
+        width: 9rem;
     }
 
     .carousselimg img {
-        width: 275px;
+        width: 17rem;
         height: auto;
     }
 
@@ -1453,7 +1492,7 @@ footer {
     }
 
     .MoMuLogo {
-        width: 150px;
+        width: 9rem;
     }
 
     .MoMulink {
@@ -1462,7 +1501,7 @@ footer {
 
     .footer_mobile {
         top: -4rem;
-        height: 500px;
+        height: 31.25rem;
     }
 
     .timegrid {
@@ -1481,15 +1520,15 @@ footer {
 
     .socialslist {
         padding-top: 0;
-        width: 547px;
+        width: 34rem;
     }
 
     .footeraddress {
-        width: 344px;
+        width: 21.5rem;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
     .zipper {
         top: 10rem;
     }
@@ -1499,7 +1538,7 @@ footer {
     }
 
     .startingfrom0__maintext {
-        width: 500px;
+        width: 31rem;
     }
 
     .startingfrom0__bodytext {
@@ -1514,7 +1553,7 @@ footer {
 
     .startingfrom0__outro p {
         text-align: end;
-        padding-bottom: 35px;
+        padding-bottom: 2rem;
     }
 
     .startingfrom0__underline {
@@ -1522,13 +1561,13 @@ footer {
     }
 
     .stopthinkingstartbeingstartbeing {
-        width: 564px;
+        width: 35.25rem;
         top: -5rem;
         left: -15rem;
     }
 
     .thegoaltitle {
-        font-size: 92px;
+        font-size: 5.75rem;
     }
 
     .thegoalcontainer p {
@@ -1538,14 +1577,14 @@ footer {
 
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 81.25em) {
     .carousselloop {
         width: 61rem;
         margin-left: 13%;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 87.5em) {
     .carousselloop {
         margin-left: 15%;
     }

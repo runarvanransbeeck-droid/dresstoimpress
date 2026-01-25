@@ -6,6 +6,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (prefersReducedMotion) {
+  ScrollTrigger.disable();
+}
+
 const player = new DotLottie({
   canvas: document.querySelector("#anim"),
   src: "assets/zipperanim2.json",
