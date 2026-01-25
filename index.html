@@ -20,7 +20,7 @@
 
     <nav>
       <div class="navtop">
-        <img class="momulogo" src="src/assets/pngs/momulogo.png" alt="">
+        <img class="momulogo" src="src/assets/avif/momulogo.avif" alt="">
         <ul class="navbarbuttons--inactive">
           <li>
             <a href="#intro">Intro</a>
@@ -34,7 +34,7 @@
           <li>
             <a href="#starting0">Starting from 0</a>
           </li>
-          <li >
+          <li>
             <a href="#newstyle">New Style</a>
           </li>
           <li>
@@ -43,8 +43,8 @@
         </ul>
         <img class="hamburgermenubutton" src="src/assets/svgs/hamburgermenu.svg" alt="">
       </div>
-      <svg class="navbg" class="header__bgmobile" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-        width="393" height="98" viewBox="0 0 393 98" fill="none">
+      <svg class="navbg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="393" height="98"
+        viewBox="0 0 393 98" fill="none">
         <path
           d="M394.001 -1.0007L394.002 80.4219C393.771 80.3184 393.513 80.203 393.225 80.0806C391.732 79.4449 389.467 78.5669 386.352 77.5806C380.119 75.6077 370.482 73.2024 356.802 71.4372C329.441 67.9072 285.906 66.9376 221.072 77.1109C128.291 91.6696 72.529 95.7635 39.9831 96.2223C23.7112 96.4516 13.2516 95.7719 6.87611 95.0401C3.68916 94.6742 1.52535 94.2959 0.16818 94.012C-0.323255 93.9092 -0.708345 93.8163 -0.998027 93.7436L-0.997438 -1.00029L394.001 -1.0007Z"
           fill="#FFA67A" stroke="#FFC8AD" stroke-width="2" />
@@ -63,13 +63,69 @@
     </nav>
 
     <main>
-      <img class="header__bgmobile" src="src/assets/pngs/headerbgmobile.png" alt="">
-      <img class="intropartnershipsectionbg" src="src/assets/pngs/intropartnershipsectionbg.png" alt="">
+      <picture class="header__bgmobile">
+        <source type="image/avif" srcset="
+            src/assets/headerbgmobilesizes/headerbgmobile-393.avif 393w,
+            src/assets/headerbgmobilesizes/headerbgmobile-721.avif 721w,
+            src/assets/headerbgmobilesizes/headerbgmobile-920.avif 920w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1080.avif 1080w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1340.avif 1340w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1560.avif 1560w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1750.avif 1750w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1920.avif 1920w,
+            src/assets/headerbgmobilesizes/headerbgmobile-2048.avif 2048w
+          " sizes="(max-width: 2048px) 100vw, 2048px">
+        <source type="image/webp" srcset="
+            src/assets/headerbgmobilesizes/headerbgmobile-393.webp 393w,
+            src/assets/headerbgmobilesizes/headerbgmobile-721.webp 721w,
+            src/assets/headerbgmobilesizes/headerbgmobile-920.webp 920w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1080.webp 1080w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1340.webp 1340w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1560.webp 1560w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1750.webp 1750w,
+            src/assets/headerbgmobilesizes/headerbgmobile-1920.webp 1920w,
+            src/assets/headerbgmobilesizes/headerbgmobile-2048.webp 2048w
+          " sizes="(max-width: 2048px) 100vw, 2048px">
+        <img src="src/assets/pngs/headerbgmobile.png" alt="" loading="eager" fetchpriority="high">
+      </picture>
+
+      <picture class="intropartnershipsectionbg">
+        <source type="image/avif" srcset=" 
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-393.avif 393w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-721.avif 721w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-920.avif 920w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1080.avif 1080w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1260.avif 1260w,
+            /src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1420.avif 1420w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1560.avif 1560w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1690.avif 1690w,
+            /src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1810.avif 1810w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1920.avif 1920w,
+            /src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1990.avif 1990w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-2048.avif 2048w
+      		" sizes="(max-width: 2048px) 100vw, 2048px">
+        <source type="image/webp" srcset=" 
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-393.webp 393w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-721.webp 721w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-920.webp 920w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1080.webp 1080w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1260.webp 1260w,
+            /src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1420.webp 1420w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1560.webp 1560w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1690.webp 1690w,
+            /src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1810.webp 1810w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1920.webp 1920w,
+            /src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-1990.webp 1990w,
+      			/src/assets/intropartnershipsectionbgsizes/intropartnershipsectionbg-2048.webp 2048w
+      		" sizes="(max-width: 2048px) 100vw, 2048px">
+        <img src="src/assets/pngs/intropartnershipsectionbg.png" alt="">
+      </picture>
+
 
 
       <header>
-        <img class="header__flowerfadetop" src="src/assets/pngs/flowerfade.png" alt="">
-        <img class="header__flowerfademiddle" src="src/assets/pngs/flowerfade.png" alt="">
+        <img class="header__flowerfadetop" src="src/assets/avif/flowerfade.avif" alt="">
+        <img class="header__flowerfademiddle" src="src/assets/avif/flowerfade.avif" alt="">
 
 
         <div class="headertextcontainer">
@@ -89,31 +145,34 @@
       <article class="initialgoalcontainer" id="intro">
         <div class="initialgoal__titletextcontainer">
           <div class="titleflowercontainer">
-            <img class="flowertitlepng" src="src/assets/pngs/flowerorange.png" alt="">
+            <img class="flowertitlepng" src="src/assets/avif/flowerorange.avif" alt="">
             <h2 class="initialgoaltitle">Initial goal</h2>
           </div>
           <p>
-            The goal of Walter Van Beirendonck has always been to bring creativity and identity to a young audience at an
+            The goal of Walter Van Beirendonck has always been to bring creativity and identity to a young audience at
+            an
             accessible
             price.
             Known for his bold colours, vibrant graphics, and surreal themes.
-            Walter designs with a playful and theatrical quality while drawing attention to social issues and challenging
+            Walter designs with a playful and theatrical quality while drawing attention to social issues and
+            challenging
             conventional ideas of beauty.
           </p>
         </div>
-        
-        <img class="initialgoal__waltervbpng" src="src/assets/pngs/waltervb.png" alt="">
+
+        <img class="initialgoal__waltervbpng" src="src/assets/avif/waltervb.avif" alt="">
       </article>
       <article class="partnershipcontainer">
-        <div class="partnership_titletextcontainer"> 
+        <div class="partnership_titletextcontainer">
           <div class="titleflowercontainer">
-            <img class="flowertitlepng" src="src/assets/pngs/flowerorange.png" alt="">
-            <img class="mustanglogo" src="src/assets/pngs/MUSTANG.png" alt="">
+            <img class="flowertitlepng" src="src/assets/avif/flowerorange.avif" alt="">
+            <img class="mustanglogo" src="src/assets/avif/MUSTANG.avif" alt="">
             <h2 class="partnershiptitle">Partnership</h2>
           </div>
-          
+
           <p>
-            For six years, Walter worked closely with the denim brand Mustang. What began as a collaboration that offered
+            For six years, Walter worked closely with the denim brand Mustang. What began as a collaboration that
+            offered
             creative
             freedom and financial support eventually ended in a legal conflict that left Walter nearly bankrupt. This is
             the
@@ -121,13 +180,13 @@
             of how that happened.
           </p>
         </div>
-        
-        <img class="partnershipcontainer__designpng" src="src/assets/pngs/design1m.png" alt="">
+
+        <img class="partnershipcontainer__designpng" src="src/assets/avif/design1m.avif" alt="">
       </article>
 
       <article class="waltersthemescontainer" id="themes">
         <div class="titleflowercontainer">
-          <img class="flowertitlepng" src="src/assets/pngs/flowergreenwhite.png" alt="">
+          <img class="flowertitlepng" src="src/assets/avif/flowergreenwhite.avif" alt="">
           <h2 class="waltersthemestitle">Walter's themes</h2>
         </div>
 
@@ -138,25 +197,25 @@
           work
           consistently pushed boundaries, using fashion as a medium for storytelling rather than decoration.
         </p>
-        <div class="stretchpathalligncontainer"> 
+        <div class="stretchpathalligncontainer">
           <img class="stretchpath" src="src/assets/svgs/stretchpath.svg" alt="">
           <div class="stretchcanvascontainer">
             <div class="stretchcanvas">
-              <img class="stretchcanvas__img" src="src/assets/pngs/wlt1.png" alt="">
-              <img class="stretchcanvas__img" src="src/assets/pngs/wlt2.png" alt="">
-              <img class="stretchcanvas__img" src="src/assets/pngs/wlt3.png" alt="">
+              <img class="stretchcanvas__img" src="src/assets/avif/wlt1.avif" alt="">
+              <img class="stretchcanvas__img" src="src/assets/avif/wlt2.avif" alt="">
+              <img class="stretchcanvas__img" src="src/assets/avif/wlt3.avif" alt="">
             </div>
-          
+
             <img class="stretchcanvas__dragger" src="src/assets/svgs/stretch.svg" alt="">
           </div>
         </div>
-        
+
       </article>
 
       <article class="breakupcontainer" id="breakup">
-        <img class="breakupcontainer__swoop" src="src/assets/pngs/swoop.png" alt="">
+        <img class="breakupcontainer__swoop" src="src/assets/avif/swoop.avif" alt="">
         <div class="breakupcontainer__titlecontainer titleflowercontainer">
-          <img class="flowertitlepng" src="src/assets/pngs/flowerorange.png" alt="">
+          <img class="flowertitlepng" src="src/assets/avif/flowerorange.avif" alt="">
           <h2 class="breakuptitle">Break-up</h2>
         </div>
 
@@ -170,8 +229,8 @@
           personal freedom, staying true to the message behind the theme.
         </p>
         <div class="breakupimgcontainer">
-          <img src="src/assets/pngs/sm1mobile.png" alt="">
-          <img src="src/assets/pngs/sm2mobile.png" alt="">
+          <img src="src/assets/avif/sm1mobile.avif" alt="">
+          <img src="src/assets/avif/sm2mobile.avif" alt="">
         </div>
         <p class="breakup__part2">
           Mustang, on the other hand, wanted the brand to appeal to a broader market. This meant toning down the
@@ -186,15 +245,15 @@
           to walk away.
         </p>
         <noscript class="zipperplaceholder">
-          <img  src="src/assets/pngs/zipper.png" alt="">
+          <img src="src/assets/avif/zipper.avif" alt="">
         </noscript>
         <canvas class="zipper" id="anim" width="939.4px" height="775px"></canvas>
 
       </article>
-    
-      
+
+
       <article class="startingfrom0container" id="starting0">
-        <img class="startingfrom0__titlebg" src="src/assets/pngs/startingfrom0titlebg.png" alt="">
+        <img class="startingfrom0__titlebg" src="src/assets/avif/startingfrom0titlebg.avif" alt="">
 
         <div class="startingfrom0title">
           <h1>STARTING FROM</h1>
@@ -210,7 +269,7 @@
             Walter was
             left to fight a costly legal battle that forced him to rebuild from nothing.
           </p>
-          
+
           <div class="startingfrom0__outro">
             <p>
               So how do you rebuild after that?
@@ -218,16 +277,16 @@
             <p>
               You keep making what you believe in.
             </p>
-            <img class="startingfrom0__underline" src="src/assets/pngs/startingfrom0underline.png" alt="">
+            <img class="startingfrom0__underline" src="src/assets/avif/startingfrom0underline.avif" alt="">
           </div>
         </div>
 
-        
+
 
       </article>
       <article class="speakhiswordscontainer">
         <div class="speakhiswordscontainer__titlecontainer titleflowercontainer">
-          <img class="flowertitlepng" src="src/assets/pngs/flowergreenwhite.png" alt="">
+          <img class="flowertitlepng" src="src/assets/avif/flowergreenwhite.avif" alt="">
           <h2 class="speakhiswordstitle">Speak his words</h2>
         </div>
         <div class="recordcontainer">
@@ -243,51 +302,55 @@
 
       </article>
       <article class="newstylecontainer" id="newstyle">
-        <img class="newstyle__bg" src="src/assets/pngs/grass2.png" alt="">
+        <img class="newstyle__bg" src="src/assets/avif/grass2.avif" alt="">
         <div class="newstylecontainer__contentcontainer">
           <div class="newstylecontainer__titletextcontainer">
             <div class="titleflowercontainer">
-              <img class="flowertitlepng" src="src/assets/pngs/flowergreenorange.png" alt="">
+              <img class="flowertitlepng" src="src/assets/avif/flowergreenorange.avif" alt="">
               <h2 class="newstyletitle">NEW STYLE</h2>
             </div>
-          
+
             <p>
-              Unable to release collections under his own name, Walter worked through collaborations and smaller projects,
+              Unable to release collections under his own name, Walter worked through collaborations and smaller
+              projects,
               relying on
-              limited resources but complete creative control. Free from corporate rules, he leaned fully into conceptual
+              limited resources but complete creative control. Free from corporate rules, he leaned fully into
+              conceptual
               design,
-              layered construction, and experimental silhouettes. Fashion became less about product and more about artistic
+              layered construction, and experimental silhouettes. Fashion became less about product and more about
+              artistic
               narrative.
             </p>
           </div>
-          
-          
+
+
           <div class="stretchcontainer">
-            <img class="stretchsilhouette" src="src/assets/pngs/stretchsilhouette.png" alt="">
+            <img class="stretchsilhouette" src="src/assets/avif/stretchsilhouette.avif" alt="">
             <div class="hatcontainer">
-              <img class="stretchhat" src="src/assets/pngs/stretchhat1.png" alt="">
+              <img class="stretchhat" src="src/assets/avif/stretchhat1.avif" alt="">
               <img class="sizer sizerhat" src="src/assets/svgs/size.svg" alt="">
             </div>
             <div class="dresscontainer">
-              <img class="stretchdress" src="src/assets/pngs/stretchdress.png" alt="">
+              <img class="stretchdress" src="src/assets/avif/stretchdress.avif" alt="">
               <img class="sizer sizerdress" src="src/assets/svgs/size.svg" alt="">
             </div>
           </div>
         </div>
-        
+
 
 
       </article>
       <article class="thegoalcontainer">
-        <img class="thegoalbg" src="src/assets/pngs/thegoalbg.png" alt="">
+        <img class="thegoalbg" src="src/assets/avif/thegoalbg.avif" alt="">
         <div class="titleflowercontainer">
-          <img class="flowertitlepng" src="src/assets/pngs/flowerorange.png" alt="">
+          <img class="flowertitlepng" src="src/assets/avif/flowerorange.avif" alt="">
           <h2 class="thegoaltitle">The Goal?</h2>
         </div>
 
         <div class="thegoalcontainer__bodytext">
           <p>
-            The collaboration with Mustang had been a commercial one. The conflict emerged when Walter introduced radical
+            The collaboration with Mustang had been a commercial one. The conflict emerged when Walter introduced
+            radical
             creativity
             and visual storytelling elements that did not easily fit into the logic of mass-market affordability.
           </p>
@@ -299,46 +362,46 @@
             over compromise.
           </p>
         </div>
-        
+
       </article>
 
       <article class="carousselcontainer">
-        <img class="carousselcontainer__bg" src="src/assets/pngs/caroussel.png" alt="">
+        <img class="carousselcontainer__bg" src="src/assets/avif/caroussel.avif" alt="">
 
         <div class="carousselloop">
           <div class="carousselimgcontainer carousselloop1">
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel1.png" alt="">
+              <img src="src/assets/avif/caroussel1.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>'Dissections' Autumn-Winter 2000-01</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel2.png" alt="">
+              <img src="src/assets/avif/caroussel2.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>'ZWART' Autumn-Winter 2017-18</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel3.png" alt="">
+              <img src="src/assets/avif/caroussel3.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>'W:A.R.' (Walter: About Rights) Autumn-Winter 2020-21</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel4.png" alt="">
+              <img src="src/assets/avif/caroussel4.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>Fall 2022 mens wear</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel5.png" alt="">
+              <img src="src/assets/avif/caroussel5.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>Fall 2023 mens wear</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel6.png" alt="">
+              <img src="src/assets/avif/caroussel6.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>Fall 2025 mens wear</p>
               </div>
@@ -346,37 +409,37 @@
           </div>
           <div class="carousselimgcontainer carousselloop2">
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel1.png" alt="">
+              <img src="src/assets/avif/caroussel1.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>'Dissections' Autumn-Winter 2000-01</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel2.png" alt="">
+              <img src="src/assets/avif/caroussel2.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>'ZWART' Autumn-Winter 2017-18</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel3.png" alt="">
+              <img src="src/assets/avif/caroussel3.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>'W:A.R.' (Walter: About Rights) Autumn-Winter 2020-21</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel4.png" alt="">
+              <img src="src/assets/avif/caroussel4.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>Fall 2022 mens wear</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel5.png" alt="">
+              <img src="src/assets/avif/caroussel5.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>Fall 2023 mens wear</p>
               </div>
             </div>
             <div class="carousselimg">
-              <img src="src/assets/pngs/caroussel6.png" alt="">
+              <img src="src/assets/avif/caroussel6.avif" alt="">
               <div class="carousseltextcontainer">
                 <p>Fall 2025 mens wear</p>
               </div>
@@ -388,15 +451,15 @@
           <img class="caroussel__prevbutton" src="src/assets/svgs/previous.svg" alt="">
           <img class="caroussel__nextbutton" src="src/assets/svgs/next.svg" alt="">
         </div>
-        
+
       </article>
       <article class="wantmorecontainer" id="more">
         <div class="wantmorecontainer__titletextcontainer">
           <div class="titleflowercontainer">
-            <img class="flowertitlepng" src="src/assets/pngs/flowerorange.png" alt="">
+            <img class="flowertitlepng" src="src/assets/avif/flowerorange.avif" alt="">
             <h2 class="wantmoretitle">Want more?</h2>
           </div>
-          
+
           <p>
             Want to learn more about
             the Antwerp six and other great designers?
@@ -408,10 +471,10 @@
             Book your tickets today!
           </p>
         </div>
-        
-       
+
+
         <div class="MoMulink">
-          <img class="MoMuLogo" src="src/assets/pngs/momulogo.png" alt="">
+          <img class="MoMuLogo" src="src/assets/avif/momulogo.avif" alt="MoMu Logo">
 
           <a class="bookticketscontainer" href="https://visit.momu.be/#/tickets/time?group=timeSlot_and_day">
             <img class="booktickets__button" src="src/assets/svgs/booktickets.svg" alt="">
@@ -441,7 +504,7 @@
           <a href="https://www.facebook.com/momuantwerp/?locale=nl_BE">
             <img src="src/assets/svgs/facebook.svg" alt="Facebook">
           </a>
-          
+
           <a href="https://www.instagram.com/momuantwerp/">
             <img src="src/assets/svgs/instagram.svg" alt="Instagram">
           </a>
