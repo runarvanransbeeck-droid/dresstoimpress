@@ -1,9 +1,10 @@
 const initmenuclick = () => {
     const button = document.querySelector('.hamburgermenubutton');
     const menu = document.querySelector('.hamburgermenu');
-    button.addEventListener('click', () => {
+    button.addEventListener('pointerdown', () => {
         button.classList.toggle('open');
-        menu.style.visibility = button.classList.contains('open') ? 'display' : 'none';
+        menu.style.display = button.classList.contains('open') ? 'flex' : 'none';
+        console.log('clicked menu button');
     });
 }
 initmenuclick();

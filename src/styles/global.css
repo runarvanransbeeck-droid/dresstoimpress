@@ -161,7 +161,9 @@ nav {
     color: var(--cyan);
 }
 
-
+.navbarbuttons--inactive li a {
+    color: var(--cyan);
+}
 
 .hamburgermenu li a:visited,
 .navbarbuttons--inactive li a:visited,
