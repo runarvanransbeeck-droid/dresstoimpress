@@ -1,4 +1,3 @@
-import { min } from '@tensorflow/tfjs-core';
 import gsap from 'gsap';
 
 const initstretch = () => {
