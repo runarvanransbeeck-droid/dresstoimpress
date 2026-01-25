@@ -327,13 +327,13 @@
           <h2 class="speakhiswordstitle">Speak his words</h2>
         </div>
         <div class="recordcontainer">
-          <img class="recordbutton" src="src/assets/svgs/recordbutton.svg" alt="">
+          <img class="recordbutton" onclick='initrecord()' src="src/assets/svgs/recordbutton.svg" alt="">
           <div class="words">
-            <p class="fashion">"FASHION IS EXPRESSION"</p>
-            <p class="freedom">"FREEDOM IS A LOOK"</p>
-            <p class="norules">"NO RULES JUST YOU"</p>
-            <p class="stopthinking">"STOP THINKING START BEING"</p>
-            <p class="truth">"WEAR YOUR TRUTH"</p>
+            <p class="fashionisexpression">"FASHION IS EXPRESSION"</p>
+            <p class="freedomisalook">"FREEDOM IS A LOOK"</p>
+            <p class="norulesjustyou">"NO RULES JUST YOU"</p>
+            <p class="stopthinkingstartbeing">"STOP THINKING START BEING"</p>
+            <p class="wearyourtruth">"WEAR YOUR TRUTH"</p>
           </div>
         </div>
 
@@ -630,6 +630,9 @@
   <script type="module" src="/src/scripts/caroussel.js"></script>
   <script type="module" src="/src/scripts/zipper.js"></script>
   <script type="module" src="/src/scripts/blackout.js"></script>
+  <script type="module" src="src/scripts/record.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
 </body>
 
 </html>
