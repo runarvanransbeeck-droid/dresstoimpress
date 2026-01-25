@@ -65,10 +65,6 @@ article {
 
 }
 
-article p {
-    min-width: 90%;
-}
-
 article,
 [id] {
     scroll-margin-top: var(--nav-offset);
@@ -162,11 +158,33 @@ nav {
     display: block;
     width: 100%;
     text-align: center;
+    color: var(--cyan);
 }
 
-.hamburgermenu li a:hover,
-.navbarbuttons--inactive li a:hover {
+
+
+.hamburgermenu li a:visited,
+.navbarbuttons--inactive li a:visited,
+.bookticketscontainer:visited {
     color: var(--cyan);
+}
+
+.hamburgermenu li a:active,
+.navbarbuttons--inactive li a:active,
+.bookticketscontainer:active {
+    color: var(--cyan);
+}
+
+.navbarbuttons--inactive li:hover a {
+    color: var(--green);
+}
+
+.hamburgermenu li:hover a {
+    color: var(--green);
+}
+
+.bookticketscontainer:hover p {
+    color: var(--green);
 }
 
 /* Walter name header */
@@ -508,7 +526,7 @@ header {
 
 .words p {
     position: absolute;
-    min-width: unset;
+    
     font-style: italic;
 }
 
@@ -928,13 +946,13 @@ footer {
     }
 
     .breakup__part2 {
-        min-width: unset;
+        
         width: 20rem;
         justify-self: center;
     }
 
     .breakup__decision {
-        min-width: unset;
+        
         width: 15rem;
     }
 
@@ -1024,9 +1042,27 @@ footer {
     }
 }
 
+@media (min-width: 800px) {
+    .carousselloop {
+        margin-left: 13%;
+        width: 35rem;
+    }
+}
+
 @media (min-width: 900px) {
     .zipperplaceholder {
         width: 100vw;
+    }
+
+    .carousselcontainer__bg{
+        width: 100vw;
+    }
+}
+
+@media (min-width: 975px) {
+    .carousselloop {
+        margin-left: 10%;
+        width: 48rem;
     }
 }
 
@@ -1040,7 +1076,6 @@ footer {
     }
 
     .navbg {
-        src: "url('/src/assets/images/Navbg_desktop.png') no-repeat center/cover";
         height: 160.07px;
     }
 
@@ -1145,6 +1180,10 @@ footer {
         padding-right: 52rem;
     }
 
+    .header__artistry::before {
+        content: " ";
+    }
+
     .flowertitlepng {
         width: 107px;
         height: auto;
@@ -1162,12 +1201,33 @@ footer {
         grid-template-columns: minmax(200px, 280px) auto;
         grid-template-rows: auto;
         justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    .partnershipcontainer{
+        display: grid;
+        grid-template-columns: auto minmax(200px, 280px);
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        gap: 1rem;
     }
 
     .initialgoal__titletextcontainer {
         grid-column: 2;
         grid-row: 1;
         width: 600px;
+    }
+
+    .partnership_titletextcontainer {
+        grid-column: 1;
+        grid-row: 1;
+        width: 600px;
+    }
+
+    .partnershipcontainer__designpng {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
     }
 
     .initialgoal__waltervbpng {
@@ -1182,6 +1242,7 @@ footer {
 
     .waltersthemescontainer {
         height: 40rem;
+        width: 600px;
     }
 
     .stretchcanvas {
@@ -1250,10 +1311,218 @@ footer {
         position: relative;
         padding-bottom: 1200px;
     }
+
+    .breakupcontainer__titlecontainer,.speakhiswordscontainer__titlecontainer{
+        justify-self: center;
+    }
+
+    .recordcontainer{
+        padding-top: 4rem;
+    }
+
+    .words p{
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+    .norules{
+        width: 412px;
+        top: -3rem;
+        left: 15rem;
+    }
+    
+    .stopthinking{
+        width: 400px;
+        top: -5rem;
+        left: -15rem;
+    }
+
+    .freedom{
+        width: 407px;
+        top: 5rem;
+        left: -20rem;
+    }
+
+    .truth{
+        width: 383px;
+        top: 4rem;
+    }
+
+    .fashion{
+        top: 10rem;
+        width: 465px;
+    }
+
+    .newstylecontainer__contentcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        gap: 3rem;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+    
+    .newstylecontainer__titletextcontainer {
+        width: 400px;
+        height: fit-content;
+    }
+
+    .stretchcontainer{
+        align-self: center;;
+        padding-top: 10rem;
+        padding-right: 20rem;
+        height: fit-content;
+    }
+
+    .thegoalcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+    }
+
+    .thegoaltitle{
+        font-size: 80px;
+    }
+
+    .carousselloop{
+        width: 41rem;
+        margin-left: 19%;
+    }
+
+    .carousselimg{
+        width: 275px;
+        height: auto;
+        margin-right: 59px;
+    }
+
+    .carousseltextcontainer{
+        top: 20rem;
+        left: 28%;
+        width: 145px;
+    }
+
+    .carousselimg img{
+        width: 275px;
+        height: auto;
+    }
+
+    .carousselcontainer__bg{
+        padding-top: 3rem;
+    }
+
+    .caroussel__nextbutton, .caroussel__prevbutton{
+        top: 8rem;
+    }
+
+    .caroussel__prevbutton{
+        left: 5rem;
+    }
+
+    .caroussel__nextbutton{
+        right: 5rem;
+    }
+
+    .wantmorecontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: space-evenly;
+        overflow-y: hidden;
+    }
+
+    .MoMuLogo{
+        width: 150px;
+    }
+
+    .MoMulink{
+        padding-top: 8rem;
+    }
+
+    .footer_mobile{
+       top: -4rem;
+       height: 500px;
+    }
+   
+    .timegrid{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .socialslisttitletext{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .socialslist{
+        padding-top: 0;
+        width: 547px;
+    }
+
+    .footeraddress{
+        width: 344px;
+    }
 }
 
 @media (min-width: 1200px) {
     .zipper {
-        top: 10rem;
+            top: 10rem;
+    }
+
+    .startingfrom0container{
+        justify-self: start;
+    }
+    .startingfrom0__maintext{
+        width: 500px;
+    }
+    .startingfrom0__bodytext{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto;
+    }
+    .startingfrom0__outro{
+        padding-top:5.8rem;
+    }
+   .startingfrom0__outro p{
+        text-align: end;
+        padding-bottom: 35px;
+   }
+   .startingfrom0__underline{
+        padding-left: 10rem;
+   }
+
+   .stopthinking{
+        width: 564px;
+        top: -5rem;
+        left: -15rem;
+    }
+
+    .thegoaltitle{
+        font-size: 92px;
+    }
+
+    .thegoalcontainer p{
+        padding-bottom: 0;
+    }
+
+   
+}
+
+@media (min-width: 1300px) {
+    .carousselloop {
+        width: 61rem;
+        margin-left: 13%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .carousselloop {
+        margin-left: 15%;
     }
 }
